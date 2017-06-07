@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
                 let defaults = UserDefaults.standard
                 defaults.set(true, forKey: "isLogin")
                 defaults.synchronize()
-                performSegue(withIdentifier: "insertmoney", sender: self)
+               performSegue(withIdentifier: "insertmoney", sender: self)
             }
         }
         
