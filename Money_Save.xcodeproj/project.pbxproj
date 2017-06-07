@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0027C1759F5D2C79FBABC407 /* Pods_Money_SaveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806B321CB80352AB4AAA476D /* Pods_Money_SaveUITests.framework */; };
+		3781679F1EE7F50600B7B300 /* Muc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781679E1EE7F50600B7B300 /* Muc.swift */; };
+		378167A11EE7F52200B7B300 /* MucLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378167A01EE7F52200B7B300 /* MucLine.swift */; };
 		7EC2F76D037D21BC049AB61F /* Pods_Money_Save.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE09FC93A74FF890F476CD1F /* Pods_Money_Save.framework */; };
 		8E626EC1EF25AD93F34A07F0 /* Pods_Money_SaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C04100220E58F5E5C1DB5C0 /* Pods_Money_SaveTests.framework */; };
 		DF3800011EE5B3BF00C967C2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3800001EE5B3BF00C967C2 /* RegisterViewController.swift */; };
@@ -44,6 +46,8 @@
 		173FB40E564E3C9714002C1A /* Pods-Money_Save.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money_Save.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Money_Save/Pods-Money_Save.debug.xcconfig"; sourceTree = "<group>"; };
 		2EB8ABB43183817FA652C71C /* Pods-Money_SaveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money_SaveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Money_SaveUITests/Pods-Money_SaveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		33F9E2589A6E368D05A23452 /* Pods-Money_SaveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money_SaveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Money_SaveUITests/Pods-Money_SaveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3781679E1EE7F50600B7B300 /* Muc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Muc.swift; sourceTree = "<group>"; };
+		378167A01EE7F52200B7B300 /* MucLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MucLine.swift; sourceTree = "<group>"; };
 		4C04100220E58F5E5C1DB5C0 /* Pods_Money_SaveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Money_SaveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		806B321CB80352AB4AAA476D /* Pods_Money_SaveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Money_SaveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9A7541A261DD740F564D28 /* Pods-Money_SaveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money_SaveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Money_SaveTests/Pods-Money_SaveTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3781679D1EE7F4D100B7B300 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3781679E1EE7F50600B7B300 /* Muc.swift */,
+				378167A01EE7F52200B7B300 /* MucLine.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		636C105F6AB87791D3E30AD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +134,7 @@
 		DFF0EB851EE58D6200A96A7E = {
 			isa = PBXGroup;
 			children = (
+				3781679D1EE7F4D100B7B300 /* Model */,
 				DFF0EB901EE58D6200A96A7E /* Money_Save */,
 				DFF0EBA51EE58D6300A96A7E /* Money_SaveTests */,
 				DFF0EBB01EE58D6300A96A7E /* Money_SaveUITests */,
@@ -468,8 +482,10 @@
 			files = (
 				DF3800031EE5C10600C967C2 /* LoginViewController.swift in Sources */,
 				DF3800011EE5B3BF00C967C2 /* RegisterViewController.swift in Sources */,
+				3781679F1EE7F50600B7B300 /* Muc.swift in Sources */,
 				DFF0EB941EE58D6200A96A7E /* ViewController.swift in Sources */,
 				DFF0EB921EE58D6200A96A7E /* AppDelegate.swift in Sources */,
+				378167A11EE7F52200B7B300 /* MucLine.swift in Sources */,
 				DFA2D7761EE710AA009CCAA4 /* HomeViewController.swift in Sources */,
 				DFA2D7781EE71441009CCAA4 /* InsertViewController.swift in Sources */,
 			);
