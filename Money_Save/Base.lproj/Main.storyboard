@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bUa-2I-Z0A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bUa-2I-Z0A">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,7 +61,6 @@
                                 </state>
                                 <connections>
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8My-W0-97F"/>
-                                    <segue destination="hHP-9a-7Wm" kind="presentation" identifier="insertmoney" id="WhD-Av-D3A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUk-1j-xi3">
@@ -124,7 +123,7 @@
         <!--Insert View Controller-->
         <scene sceneID="ZoO-89-vJ8">
             <objects>
-                <viewController id="hHP-9a-7Wm" customClass="InsertViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InsertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hHP-9a-7Wm" customClass="InsertViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gq1-1F-C6F"/>
                         <viewControllerLayoutGuide type="bottom" id="I1o-wB-Hta"/>
@@ -144,7 +143,6 @@
                                 <state key="normal" image="checked"/>
                                 <connections>
                                     <action selector="btnInsertMoney:" destination="hHP-9a-7Wm" eventType="touchUpInside" id="uQv-A8-kJG"/>
-                                    <action selector="btnOK:" destination="hHP-9a-7Wm" eventType="touchUpInside" id="WKc-bZ-sim"/>
                                     <segue destination="36k-cT-mTP" kind="show" identifier="home" id="HGF-Ka-ZoA"/>
                                 </connections>
                             </button>
@@ -187,12 +185,11 @@
                     </view>
                     <connections>
                         <outlet property="lblSoTien" destination="UrB-gh-9lE" id="7gu-Ag-Pyy"/>
-                        <outlet property="moneyText" destination="UrB-gh-9lE" id="Tk0-Wm-h8A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WMa-To-j56" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="1237"/>
+            <point key="canvasLocation" x="-300" y="1248"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="ww4-2a-Zws">

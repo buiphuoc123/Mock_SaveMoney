@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -29,16 +30,32 @@ class LoginViewController: UIViewController {
         let user = usernameText.text;
         let pass = passwordText.text;
         
-        let usernamrStore = UserDefaults.standard.string(forKey: "user");
-        let passwordStore = UserDefaults.standard.string(forKey: "pass");
+        //let usernamrStore = UserDefaults.standard.string(forKey: "user");
+        //let passwordStore = UserDefaults.standard.string(forKey: "pass");
         
-        if(usernamrStore == user){
+        /*if(usernamrStore == user){
             if(passwordStore == pass)
             {
                 let defaults = UserDefaults.standard
                 defaults.set(true, forKey: "isLogin")
                 defaults.synchronize()
                performSegue(withIdentifier: "insertmoney", sender: self)
+            }
+        }*/
+        
+        Auth.auth().signIn(withEmail: user!, password: pass!) { (user, error) in
+            if error != nil
+            {
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+            else
+            {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "InsertViewController")
+                self.present(vc!, animated: true, completion: nil)
             }
         }
         

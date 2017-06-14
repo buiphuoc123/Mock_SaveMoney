@@ -10,6 +10,7 @@
 		0027C1759F5D2C79FBABC407 /* Pods_Money_SaveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806B321CB80352AB4AAA476D /* Pods_Money_SaveUITests.framework */; };
 		7EC2F76D037D21BC049AB61F /* Pods_Money_Save.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE09FC93A74FF890F476CD1F /* Pods_Money_Save.framework */; };
 		8E626EC1EF25AD93F34A07F0 /* Pods_Money_SaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C04100220E58F5E5C1DB5C0 /* Pods_Money_SaveTests.framework */; };
+		B76F66381EF112E8000FEE02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B76F66371EF112E8000FEE02 /* GoogleService-Info.plist */; };
 		DF3800011EE5B3BF00C967C2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3800001EE5B3BF00C967C2 /* RegisterViewController.swift */; };
 		DF3800031EE5C10600C967C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3800021EE5C10600C967C2 /* LoginViewController.swift */; };
 		DFA2D7761EE710AA009CCAA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2D7751EE710AA009CCAA4 /* HomeViewController.swift */; };
@@ -47,6 +48,7 @@
 		4C04100220E58F5E5C1DB5C0 /* Pods_Money_SaveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Money_SaveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		806B321CB80352AB4AAA476D /* Pods_Money_SaveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Money_SaveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9A7541A261DD740F564D28 /* Pods-Money_SaveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money_SaveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Money_SaveTests/Pods-Money_SaveTests.release.xcconfig"; sourceTree = "<group>"; };
+		B76F66371EF112E8000FEE02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE09FC93A74FF890F476CD1F /* Pods_Money_Save.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Money_Save.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3800001EE5B3BF00C967C2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DF3800021EE5C10600C967C2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				DFF0EB981EE58D6300A96A7E /* Assets.xcassets */,
 				DFF0EB9A1EE58D6300A96A7E /* LaunchScreen.storyboard */,
 				DFF0EB9D1EE58D6300A96A7E /* Info.plist */,
+				B76F66371EF112E8000FEE02 /* GoogleService-Info.plist */,
 			);
 			path = Money_Save;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF0EB9C1EE58D6300A96A7E /* LaunchScreen.storyboard in Resources */,
+				B76F66381EF112E8000FEE02 /* GoogleService-Info.plist in Resources */,
 				DFF0EB991EE58D6300A96A7E /* Assets.xcassets in Resources */,
 				DFF0EB971EE58D6200A96A7E /* Main.storyboard in Resources */,
 			);

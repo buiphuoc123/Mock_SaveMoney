@@ -8,6 +8,7 @@
 
 //import Cocoa
 import UIKit
+import FirebaseAuth
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var usernameText: UITextField!
@@ -34,6 +35,9 @@ class RegisterViewController: UIViewController {
         let pass = passwordText.text
         let cofirmpass = confirmPassText.text
         
+        
+
+        
         // Kiem tra 
         if((user?.isEmpty)! || (pass?.isEmpty)! || (cofirmpass?.isEmpty)!){
             
@@ -41,20 +45,36 @@ class RegisterViewController: UIViewController {
             
             return
         }
+        else
+        {
+            Auth.auth().createUser(withEmail: user!, password: pass!, completion: { (user, error) in
+                if error != nil
+                {
+                    print("Loi")
+                }
+                else
+                {
+                    print("ThanhCong")
+                }
+            })
+
+        }
         // Kiem tra password
+        
         if(pass != cofirmpass){
             self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Mật khẩu không khớp. Vui lòng kiểm tra lại!!")
             return
         }
         
         // Data
-        let defaults = UserDefaults.standard
+        /*let defaults = UserDefaults.standard
         defaults.set("user", forKey: user!)
         defaults.set("pass", forKey: pass!)
-        defaults.synchronize()
+        defaults.synchronize()*/
+        
         
         // Thong bao dang ki thanh cong
-        self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Chúc mừng bạn đã đăng kí thành công!!!")        
+       self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Chúc mừng bạn đã đăng kí thành công!!!")
     }
     func showSuccessAlert(titleAlert:NSString,messageAlert:NSString)
     {
