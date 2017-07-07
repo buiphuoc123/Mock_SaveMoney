@@ -92,7 +92,7 @@ class HomeViewController: UIViewController {
         if(moneynew > moneyinput){
             
             moneynew = moneynew - moneyinput
-            lblMyMoney = String(moneynew)
+            lblMyMoney.text = String(moneynew)
             
             
             

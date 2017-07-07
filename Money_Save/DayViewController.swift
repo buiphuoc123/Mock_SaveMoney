@@ -55,7 +55,7 @@ class DayViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let homeController = segue.destination as! HomeViewController
         
-        homeController.day = dayPicker.text
+        homeController.day = dayPicker.text!
     }
     
     func showSuccessAlert(titleAlert:NSString,messageAlert:NSString)

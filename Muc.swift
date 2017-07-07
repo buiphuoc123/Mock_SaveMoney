@@ -15,10 +15,13 @@ class Muc
     var image: UIImage
     
     
-    init(titled: String, image: UIImage)
+    init(titled: String, imageName: String)
     {
         self.title = titled
-        self.image = image
-        
+        if let img = UIImage(named: imageName) {
+            image = img
+        } else {
+            image = UIImage(named: "default")!
+        }
     }
 }

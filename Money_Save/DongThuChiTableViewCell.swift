@@ -21,9 +21,9 @@ class DongThuChiTableViewCell: UITableViewCell {
     
     func configureHangMucViewCell(muc: ThuChi) {
         
-        self.titlename = muc.title
-        self.name = muc.namemuc
-        self.day = muc.ngay
-        self.money = muc.sotien
+        self.titlename.text = muc.title
+        self.name.text = muc.namemuc
+        self.day.text = muc.ngay
+        self.money.text = muc.sotien
     }
 }
