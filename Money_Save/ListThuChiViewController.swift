@@ -39,7 +39,7 @@ class ListThuChiViewController: UIViewController, UITableViewDataSource {
 
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        thu.count
+        return thus.count
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

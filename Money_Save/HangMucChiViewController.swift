@@ -38,11 +38,11 @@ class HangMucChiViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     //Số section hiển thị
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return hangmucchicha.count
     }
     //Chỉnh nội dung cho từng cell
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DongHangMucChiTableViewCell
         
         //Configure Cell
@@ -53,7 +53,7 @@ class HangMucChiViewController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
     //Set tiêu đề cho từng section
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return hangmucchicha[section].name
     }
     
