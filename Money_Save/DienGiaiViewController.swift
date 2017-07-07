@@ -43,7 +43,7 @@ class DienGiaiViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let homeController = segue.destination as! HomeViewController
         
-        homeController.dienGiai = tvDienGiai.text
+        homeController.dienGiai = tvDienGiai.text!
     }
     
     func showSuccessAlert(titleAlert:NSString,messageAlert:NSString)

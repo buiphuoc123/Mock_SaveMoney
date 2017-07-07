@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
     var dienGiai = String()
     var day = String()
     var flag = Int()
+    
     var moneyinput = Int()
     var moneynew = Int()
     
@@ -38,7 +39,7 @@ class HomeViewController: UIViewController {
         lblMyMoney.text = myMoney
         lblNgay.text = "Hôm nay"
         flag = 1
-        moneynew = Int(lblMyMoney.text)
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,6 +88,7 @@ class HomeViewController: UIViewController {
         lblNgay.text = day
         tenHangMuctxt.text = nameHangMuc
         moneyinput = Int(soTientxt.text)
+        moneynew = Int(lblMyMoney.text)
         if(moneynew > moneyinput){
             
             moneynew = moneynew - moneyinput

@@ -14,7 +14,7 @@ class MucLine
     init() {
     }
     
-    class func hangmucLines() -> [MucLine]
+    class func hangmucLines() -> [Muc]
     {
         var muc = [Muc]()
         

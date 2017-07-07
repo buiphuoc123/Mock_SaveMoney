@@ -41,8 +41,8 @@ class HangMucThuViewController: UIViewController, UITableViewDataSource , UITabl
     // Hàm hiển thị nội dung trong dòng
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DongHangMucThuTableViewCell
-        let muc = Muc
-        
+        let muc: Muc
+        muc = mucs[indexPath.row]
         cell.configureHangMucViewCell(muc: muc)
         return cell
         

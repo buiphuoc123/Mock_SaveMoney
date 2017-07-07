@@ -12,45 +12,32 @@ class DayViewController: UIViewController {
 
     
     @IBOutlet weak var dayPicker: UITextField!
-    let datePicker: UIDatePicker
+   // let datePicker: UIDatePicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        createDatePicker()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func createDatePicker(){
-        // Cấu hình date
-        datePicker.datePickerMode = .date
-        dayPicker.text = "\(datePicker.date)"
-        
-        let toolbar = UIToolbar
-        toolbar.sizeToFit()
-        //
-        let doneButton = UIBarButtonItem(UIBarButtonSystemItem: .done, target: nil, action: #selector(doneClick()))
-        toolbar.setItems([doneButton], animated: false)
-        
-        dayPicker.inputAccessoryView = toolbar
-        
-        dayPicker.inputView = datePicker
-    
+    @IBAction func clickDatePicker(_ sender: UITextField) {
+        let datePickerView:UIDatePicker = UIDatePicker()
+        datePickerView.datePickerMode = .date
+        sender.inputView = datePickerView
+        datePickerView.addTarget(self, action: #selector(DayViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
     }
-    
-    func doneClick(){
-        // cấu hình date
-        let dateFormat = DateFormatter()
-        dateFormat.dateStyle = .short
-        dateFormat.timeStyle = .none
-    //
-        dayPicker.text = dateFormat.string(from: datePicker.date)
-        self.view.endEditing(true)
+    // cau hinh date
+    func datePickerValueChanged(sender:UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = DateFormatter.Style.medium
+        dateFormatter.timeStyle = DateFormatter.Style.none
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dayPicker.text = dateFormatter.string(from: sender.date)
     }
     
     @IBAction func clickXong(_ sender: Any) {
