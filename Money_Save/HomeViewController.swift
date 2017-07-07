@@ -11,11 +11,34 @@ import UIKit
 class HomeViewController: UIViewController {
    
     @IBOutlet weak var lblMyMoney: UILabel!
+    
+    @IBOutlet weak var lblDienGiai: UITextField!
+    
+    @IBOutlet weak var lblNgay: UILabel!
+    
+    @IBOutlet weak var soTientxt: UITextField!
+    
+    @IBOutlet weak var segmentHangMuc: UISegmentedControl!
+    
+    @IBOutlet weak var lblTenMuc: UILabel!
+    
+    
+    @IBOutlet weak var tenHangMuctxt: UITextField!
+    
     var myMoney = String()
+    var nameHangMuc = String()
+    var dienGiai = String()
+    var day = String()
+    var flag = Int()
+    var moneyinput = Int()
+    var moneynew = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         lblMyMoney.text = myMoney
-        // Do any additional setup after loading the view.
+        lblNgay.text = "Hôm nay"
+        flag = 1
+        moneynew = Int(lblMyMoney.text)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +46,75 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func clickSegment(_ sender: Any) {
+        switch segmentHangMuc.selectedSegmentIndex {
+        case 0:
+            lblTenMuc.text = "Mục chi"
+            flag = 1
+        case 1:
+            lblTenMuc.text = "Mục thu"
+            flag = 2
+        default:
+            break
+        }
+    }
+    
+    @IBAction func clickHangMuc(_ sender: Any) {
+        if flag == 1 {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DienGiaiViewController")
+            self.present(vc!, animated: true, completion: nil)
+        }
+        if flag == 2 {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "hangmucthu")
+            self.present(vc!, animated: true, completion: nil)
+        }
+    }
 
+    @IBAction func clickDienGiai(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DienGiaiViewController")
+        self.present(vc!, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func clickNgay(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DayViewController")
+        self.present(vc!, animated: true, completion: nil)
+
+    }
+    
+    @IBAction func clickLuu(_ sender: Any) {
+        lblDienGiai.text = dienGiai
+        lblNgay.text = day
+        tenHangMuctxt.text = nameHangMuc
+        moneyinput = Int(soTientxt.text)
+        if(moneynew > moneyinput){
+            
+            moneynew = moneynew - moneyinput
+            lblMyMoney = String(moneynew)
+            
+            
+            
+        }
+        else{
+            self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Số tiền trong ví nhỏ hơn số tiền bạn nhập vào. Vui lòng kiểm tra lại")
+        }
+        
+    }
+    
+    func showSuccessAlert(titleAlert:NSString,messageAlert:NSString)
+    {
+        let alert:UIAlertController=UIAlertController(title:titleAlert as String, message: messageAlert as String, preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+        {
+            UIAlertAction in
+        }
+        alert.addAction(okAction)
+        if UIDevice.current.userInterfaceIdiom == .phone
+        {
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

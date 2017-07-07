@@ -11,13 +11,14 @@ import UIKit
 
 class Muc
 {
-    var title: String           //biến lưu tên sự kiện (event)
-    var description: String     //biến lưu chi tiết sự kiện
+    var title: String
+    var image: UIImage
     
-    //Một sự kiện chuẩn: gồm tên và chi tiết
-    init(titled: String, description: String)
+    
+    init(titled: String, image: UIImage)
     {
         self.title = titled
-        self.description = description
+        self.image = image
+        
     }
 }
