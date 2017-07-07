@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     var nameHangMuc = String()
     var dienGiai = String()
     var day = String()
-    var flag = Int()
+    var flag :Int = 1
     
     var moneyinput = Int()
     var moneynew = Int()
@@ -38,7 +38,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         lblMyMoney.text = myMoney
         lblNgay.text = "Hôm nay"
-        flag = 1
+        
       
     }
 
