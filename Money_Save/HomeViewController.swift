@@ -62,7 +62,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func clickHangMuc(_ sender: Any) {
         if flag == 1 {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DienGiaiViewController")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HangMucChiViewController")
             self.present(vc!, animated: true, completion: nil)
         }
         if flag == 2 {
@@ -100,6 +100,14 @@ class HomeViewController: UIViewController {
         else{
             self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Số tiền trong ví nhỏ hơn số tiền bạn nhập vào. Vui lòng kiểm tra lại")
         }
+        
+    }
+    
+    
+    @IBAction func clickShowList(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListThuChiViewController")
+        self.present(vc!, animated: true, completion: nil)
+
         
     }
     

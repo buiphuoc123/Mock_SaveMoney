@@ -18,6 +18,10 @@
 		DF2B5B6C1F0F48E2006C84E4 /* ListThuChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5B6B1F0F48E2006C84E4 /* ListThuChi.swift */; };
 		DF2B5B6E1F0F4E40006C84E4 /* ListThuChiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5B6D1F0F4E40006C84E4 /* ListThuChiViewController.swift */; };
 		DF2B5B701F0F4E86006C84E4 /* DongThuChiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5B6F1F0F4E86006C84E4 /* DongThuChiTableViewCell.swift */; };
+		DF2B5B761F0FC17C006C84E4 /* HangMucChiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5B751F0FC17C006C84E4 /* HangMucChiViewController.swift */; };
+		DF2B5B781F0FC1D1006C84E4 /* DongHangMucChiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5B771F0FC1D1006C84E4 /* DongHangMucChiTableViewCell.swift */; };
+		DF2B5B7A1F0FC2BB006C84E4 /* HangMucChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5B791F0FC2BB006C84E4 /* HangMucChi.swift */; };
+		DF2B5B7C1F0FC49E006C84E4 /* ListHangMucChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5B7B1F0FC49E006C84E4 /* ListHangMucChi.swift */; };
 		DF3373EE1F0E73F40054D54B /* HangMucThuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3373ED1F0E73F40054D54B /* HangMucThuViewController.swift */; };
 		DF3373F01F0E87C80054D54B /* DongHangMucThuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3373EF1F0E87C80054D54B /* DongHangMucThuTableViewCell.swift */; };
 		DF3373F21F0E94D50054D54B /* DienGiaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3373F11F0E94D50054D54B /* DienGiaiViewController.swift */; };
@@ -67,6 +71,10 @@
 		DF2B5B6B1F0F48E2006C84E4 /* ListThuChi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListThuChi.swift; sourceTree = "<group>"; };
 		DF2B5B6D1F0F4E40006C84E4 /* ListThuChiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListThuChiViewController.swift; sourceTree = "<group>"; };
 		DF2B5B6F1F0F4E86006C84E4 /* DongThuChiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DongThuChiTableViewCell.swift; sourceTree = "<group>"; };
+		DF2B5B751F0FC17C006C84E4 /* HangMucChiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangMucChiViewController.swift; sourceTree = "<group>"; };
+		DF2B5B771F0FC1D1006C84E4 /* DongHangMucChiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DongHangMucChiTableViewCell.swift; sourceTree = "<group>"; };
+		DF2B5B791F0FC2BB006C84E4 /* HangMucChi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangMucChi.swift; sourceTree = "<group>"; };
+		DF2B5B7B1F0FC49E006C84E4 /* ListHangMucChi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHangMucChi.swift; sourceTree = "<group>"; };
 		DF3373ED1F0E73F40054D54B /* HangMucThuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangMucThuViewController.swift; sourceTree = "<group>"; };
 		DF3373EF1F0E87C80054D54B /* DongHangMucThuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DongHangMucThuTableViewCell.swift; sourceTree = "<group>"; };
 		DF3373F11F0E94D50054D54B /* DienGiaiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DienGiaiViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +134,8 @@
 				378167A01EE7F52200B7B300 /* MucLine.swift */,
 				DF2B5B691F0F47F3006C84E4 /* ThuChi.swift */,
 				DF2B5B6B1F0F48E2006C84E4 /* ListThuChi.swift */,
+				DF2B5B791F0FC2BB006C84E4 /* HangMucChi.swift */,
+				DF2B5B7B1F0FC49E006C84E4 /* ListHangMucChi.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -160,6 +170,8 @@
 				DF2B5B671F0F2D9B006C84E4 /* DayViewController.swift */,
 				DF2B5B6D1F0F4E40006C84E4 /* ListThuChiViewController.swift */,
 				DF2B5B6F1F0F4E86006C84E4 /* DongThuChiTableViewCell.swift */,
+				DF2B5B751F0FC17C006C84E4 /* HangMucChiViewController.swift */,
+				DF2B5B771F0FC1D1006C84E4 /* DongHangMucChiTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -518,11 +530,15 @@
 			files = (
 				DF3373EE1F0E73F40054D54B /* HangMucThuViewController.swift in Sources */,
 				DF3800031EE5C10600C967C2 /* LoginViewController.swift in Sources */,
+				DF2B5B7C1F0FC49E006C84E4 /* ListHangMucChi.swift in Sources */,
+				DF2B5B781F0FC1D1006C84E4 /* DongHangMucChiTableViewCell.swift in Sources */,
+				DF2B5B7A1F0FC2BB006C84E4 /* HangMucChi.swift in Sources */,
 				DF3373F21F0E94D50054D54B /* DienGiaiViewController.swift in Sources */,
 				DF3800011EE5B3BF00C967C2 /* RegisterViewController.swift in Sources */,
 				3781679F1EE7F50600B7B300 /* Muc.swift in Sources */,
 				DF2B5B6E1F0F4E40006C84E4 /* ListThuChiViewController.swift in Sources */,
 				DFF0EB941EE58D6200A96A7E /* ViewController.swift in Sources */,
+				DF2B5B761F0FC17C006C84E4 /* HangMucChiViewController.swift in Sources */,
 				DF2B5B6C1F0F48E2006C84E4 /* ListThuChi.swift in Sources */,
 				DF2B5B701F0F4E86006C84E4 /* DongThuChiTableViewCell.swift in Sources */,
 				DF2B5B6A1F0F47F3006C84E4 /* ThuChi.swift in Sources */,

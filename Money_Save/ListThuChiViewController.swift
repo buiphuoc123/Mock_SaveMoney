@@ -8,20 +8,48 @@
 
 import UIKit
 
-class ListThuChiViewController: UIViewController {
+class ListThuChiViewController: UIViewController, UITableViewDataSource {
 
+    
+    @IBOutlet weak var myTable: UITableView!
+    var thus: [ThuChi]{
+        var title: String
+        var name: String
+        var day: String
+        var money1: String
+        return ListThuChi.listThuChiLines()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        myTable.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DongThuChiTableViewCell
+        let thu: ThuChi
+        thu = thus[indexPath.row]
+        cell.configureHangMucViewCell(muc: thu)
+        return cell
 
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        thu.count
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    @IBAction func clickBack(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+        self.present(vc!, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
