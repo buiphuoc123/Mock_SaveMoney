@@ -13,7 +13,9 @@ class DayViewController: UIViewController {
     
     @IBOutlet weak var dayPicker: UITextField!
    // let datePicker: UIDatePicker
-    
+    var myDelegate: SetValuePreviousVC?
+    var revenueTypeList: [RevenueType] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,8 +50,11 @@ class DayViewController: UIViewController {
             self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Bạn chưa điền đầy đủ thông tin")
         }
         else {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
-            self.present(vc!, animated: true, completion: nil)
+            myDelegate?.returnData(id: 2, name: dayPicker.text)
+
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            
+            self.navigationController?.popViewController(animated: true)
         }
     }
     

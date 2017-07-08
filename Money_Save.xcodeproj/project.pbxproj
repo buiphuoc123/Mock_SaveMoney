@@ -10,6 +10,12 @@
 		0027C1759F5D2C79FBABC407 /* Pods_Money_SaveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806B321CB80352AB4AAA476D /* Pods_Money_SaveUITests.framework */; };
 		3781679F1EE7F50600B7B300 /* Muc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781679E1EE7F50600B7B300 /* Muc.swift */; };
 		378167A11EE7F52200B7B300 /* MucLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378167A01EE7F52200B7B300 /* MucLine.swift */; };
+		7A44F0B71F108BCB002429A0 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A44F0B61F108BCB002429A0 /* getData.swift */; };
+		7A44F0BB1F109C10002429A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A44F0BA1F109C10002429A0 /* User.swift */; };
+		7A44F0BD1F10A7D0002429A0 /* getDataThu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A44F0BC1F10A7D0002429A0 /* getDataThu.swift */; };
+		7A44F0BF1F10A9EC002429A0 /* getDataChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A44F0BE1F10A9EC002429A0 /* getDataChi.swift */; };
+		7A44F0C11F10B339002429A0 /* ProtocolTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A44F0C01F10B339002429A0 /* ProtocolTransaction.swift */; };
+		7A44F0C31F10B44A002429A0 /* LoaiThucChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A44F0C21F10B44A002429A0 /* LoaiThucChi.swift */; };
 		7EC2F76D037D21BC049AB61F /* Pods_Money_Save.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE09FC93A74FF890F476CD1F /* Pods_Money_Save.framework */; };
 		8E626EC1EF25AD93F34A07F0 /* Pods_Money_SaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C04100220E58F5E5C1DB5C0 /* Pods_Money_SaveTests.framework */; };
 		B76F66381EF112E8000FEE02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B76F66371EF112E8000FEE02 /* GoogleService-Info.plist */; };
@@ -62,6 +68,12 @@
 		3781679E1EE7F50600B7B300 /* Muc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Muc.swift; sourceTree = "<group>"; };
 		378167A01EE7F52200B7B300 /* MucLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MucLine.swift; sourceTree = "<group>"; };
 		4C04100220E58F5E5C1DB5C0 /* Pods_Money_SaveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Money_SaveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A44F0B61F108BCB002429A0 /* getData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
+		7A44F0BA1F109C10002429A0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7A44F0BC1F10A7D0002429A0 /* getDataThu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getDataThu.swift; sourceTree = "<group>"; };
+		7A44F0BE1F10A9EC002429A0 /* getDataChi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getDataChi.swift; sourceTree = "<group>"; };
+		7A44F0C01F10B339002429A0 /* ProtocolTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolTransaction.swift; sourceTree = "<group>"; };
+		7A44F0C21F10B44A002429A0 /* LoaiThucChi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaiThucChi.swift; sourceTree = "<group>"; };
 		806B321CB80352AB4AAA476D /* Pods_Money_SaveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Money_SaveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9A7541A261DD740F564D28 /* Pods-Money_SaveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money_SaveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Money_SaveTests/Pods-Money_SaveTests.release.xcconfig"; sourceTree = "<group>"; };
 		B76F66371EF112E8000FEE02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -136,6 +148,12 @@
 				DF2B5B6B1F0F48E2006C84E4 /* ListThuChi.swift */,
 				DF2B5B791F0FC2BB006C84E4 /* HangMucChi.swift */,
 				DF2B5B7B1F0FC49E006C84E4 /* ListHangMucChi.swift */,
+				7A44F0B61F108BCB002429A0 /* getData.swift */,
+				7A44F0BA1F109C10002429A0 /* User.swift */,
+				7A44F0BC1F10A7D0002429A0 /* getDataThu.swift */,
+				7A44F0BE1F10A9EC002429A0 /* getDataChi.swift */,
+				7A44F0C01F10B339002429A0 /* ProtocolTransaction.swift */,
+				7A44F0C21F10B44A002429A0 /* LoaiThucChi.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -537,7 +555,10 @@
 				DF3800011EE5B3BF00C967C2 /* RegisterViewController.swift in Sources */,
 				3781679F1EE7F50600B7B300 /* Muc.swift in Sources */,
 				DF2B5B6E1F0F4E40006C84E4 /* ListThuChiViewController.swift in Sources */,
+				7A44F0C31F10B44A002429A0 /* LoaiThucChi.swift in Sources */,
+				7A44F0BF1F10A9EC002429A0 /* getDataChi.swift in Sources */,
 				DFF0EB941EE58D6200A96A7E /* ViewController.swift in Sources */,
+				7A44F0C11F10B339002429A0 /* ProtocolTransaction.swift in Sources */,
 				DF2B5B761F0FC17C006C84E4 /* HangMucChiViewController.swift in Sources */,
 				DF2B5B6C1F0F48E2006C84E4 /* ListThuChi.swift in Sources */,
 				DF2B5B701F0F4E86006C84E4 /* DongThuChiTableViewCell.swift in Sources */,
@@ -546,8 +567,11 @@
 				378167A11EE7F52200B7B300 /* MucLine.swift in Sources */,
 				DF3373F01F0E87C80054D54B /* DongHangMucThuTableViewCell.swift in Sources */,
 				DFA2D7761EE710AA009CCAA4 /* HomeViewController.swift in Sources */,
+				7A44F0B71F108BCB002429A0 /* getData.swift in Sources */,
 				DFA2D7781EE71441009CCAA4 /* InsertViewController.swift in Sources */,
 				DF2B5B681F0F2D9B006C84E4 /* DayViewController.swift in Sources */,
+				7A44F0BD1F10A7D0002429A0 /* getDataThu.swift in Sources */,
+				7A44F0BB1F109C10002429A0 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

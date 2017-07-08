@@ -24,4 +24,10 @@ class Muc
             image = UIImage(named: "default")!
         }
     }
+    init(json: [String: AnyObject]) {
+        
+       
+        self.title = (json["ten"] as? String)!
+        self.image = UIImage(named: (json["hinh"] as? String)!)!
+    }
 }

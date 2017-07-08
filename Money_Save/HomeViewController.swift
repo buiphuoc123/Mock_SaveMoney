@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, SetValuePreviousVC {
    
     @IBOutlet weak var lblMyMoney: UILabel!
     
@@ -41,6 +41,7 @@ class HomeViewController: UIViewController {
         
       
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,39 +63,51 @@ class HomeViewController: UIViewController {
     
     @IBAction func clickHangMuc(_ sender: Any) {
         if flag == 1 {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HangMucChiViewController")
-            self.present(vc!, animated: true, completion: nil)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HangMucChiViewController") as! HangMucChiViewController
+            
+            vc.myDelegate = self
+            
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         if flag == 2 {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "hangmucthu")
-            self.present(vc!, animated: true, completion: nil)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "hangmucthu") as! HangMucThuViewController
+            vc.myDelegate = self
+            
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 
     @IBAction func clickDienGiai(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DienGiaiViewController")
-        self.present(vc!, animated: true, completion: nil)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DienGiaiViewController") as! DienGiaiViewController
+        vc.myDelegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
     @IBAction func clickNgay(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DayViewController")
-        self.present(vc!, animated: true, completion: nil)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DayViewController") as! DayViewController
+        vc.myDelegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
+
 
     }
     
     @IBAction func clickLuu(_ sender: Any) {
-        lblDienGiai.text = dienGiai
-        lblNgay.text = day
-        tenHangMuctxt.text = nameHangMuc
-        moneyinput = Int(soTientxt.text)
-        moneynew = Int(lblMyMoney.text)
+        let thuchi = ThuChi(titled: lblTenMuc.text!, namemuc: tenHangMuctxt.text!, ngay: lblNgay.text!, sotien: soTientxt.text!)
+        moneyinput = Int(soTientxt.text!)!
+        moneynew = Int(lblMyMoney.text!)!
         if(moneynew > moneyinput){
             
             moneynew = moneynew - moneyinput
             lblMyMoney.text = String(moneynew)
-            
-            
+        
+            GetData.AddData(transactionModel: thuchi, completionHandler: { (error) in
+                if error == nil {
+                   self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Da ghi thanh cong")
+                } else {
+                    self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Ghi that bai")
+                }
+            })
             
         }
         else{
@@ -125,6 +138,26 @@ class HomeViewController: UIViewController {
         }
     }
     
+    
+    func returnData(id: Int?, name: String?) {
+        if id == 0 {
+            if let ob = name {
+                tenHangMuctxt.text = ob
+            }
+        }
+        if id == 1 {
+            if let ob1 = name
+            {
+                lblDienGiai.text = ob1
+            }
+        }
+        if id == 2 {
+            if let ob1 = name
+            {
+                lblNgay.text = ob1
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

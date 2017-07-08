@@ -43,27 +43,28 @@ class RegisterViewController: UIViewController {
             
             self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Bạn chưa điền đầy đủ thông tin. Vui lòng kiểm tra lại!!!")
             
-            return
+            
         }
         else
         {
+            if(pass != cofirmpass){
+                self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Mật khẩu không khớp. Vui lòng kiểm tra lại!!")
+                
+            }
+            else{
             Auth.auth().createUser(withEmail: user!, password: pass!, completion: { (user, error) in
                 if error != nil
                 {
-                    print("Loi")
-                }
+                    self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Ten dang nhap co dang laf email!! Vui long kiem tra lai")
+                                   }
                 else
                 {
-                    print("ThanhCong")
+                    // Thong bao dang ki thanh cong
+                    self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Chúc mừng bạn đã đăng kí thành công!!!")
                 }
             })
+            }
 
-        }
-        // Kiem tra password
-        
-        if(pass != cofirmpass){
-            self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Mật khẩu không khớp. Vui lòng kiểm tra lại!!")
-            return
         }
         
         // Data
@@ -73,8 +74,7 @@ class RegisterViewController: UIViewController {
         defaults.synchronize()*/
         
         
-        // Thong bao dang ki thanh cong
-       self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Chúc mừng bạn đã đăng kí thành công!!!")
+        
     }
     func showSuccessAlert(titleAlert:NSString,messageAlert:NSString)
     {

@@ -8,6 +8,7 @@ target 'Money_Save' do
   # Pods for Money_Save
    pod 'Firebase/Core'
    pod 'Firebase/Auth'
+   pod 'Firebase/Database'
   target 'Money_SaveTests' do
     inherit! :search_paths
     # Pods for testing

@@ -16,6 +16,10 @@ class InsertViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        /*let transaction: Transaction = Transaction(loaigiaodich: "123", tengiaodich: "123", ngay: "12/03/2016", sotien: 100)
+        GetData.AddData(transactionModel: transaction, completionHandler: {(error) in
+            print(error?.localizedDescription ?? "nil")
+        })*/
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,13 +37,11 @@ class InsertViewController: UIViewController {
         }
         else{
             
-            performSegue(withIdentifier: "home", sender: self)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            vc.myMoney = lblSoTien.text!
+            self.navigationController?.pushViewController(vc, animated: true)
             
         }
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let homeController = segue.destination as! HomeViewController
-        homeController.myMoney = lblSoTien.text!
     }
     
     

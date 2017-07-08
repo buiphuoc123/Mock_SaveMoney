@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -54,8 +54,9 @@ class LoginViewController: UIViewController {
             }
             else
             {
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "InsertViewController")
-                self.present(vc!, animated: true, completion: nil)
+                User.uid = user?.uid
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "InsertViewController") as! InsertViewController
+                self.navigationController?.pushViewController(vc, animated: true)
             }
         }
         

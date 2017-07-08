@@ -8,17 +8,20 @@
 
 import UIKit
 
+
 class HangMucChiViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var hangmucchicha: [ListHangMucChi] = {
-        return ListHangMucChi.listHangMuc()
-    }()
+    var chis: [HangMucChi] = []
+    var myDelegate: SetValuePreviousVC?
+    var revenueTypeList: [RevenueType] = []
     
     @IBOutlet weak var myTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myTable.dataSource = self
         myTable.delegate = self
+        getDataChi()
         
     }
     // Load lại dữ liệu sau khi chuyển view trở lại
@@ -33,28 +36,49 @@ class HangMucChiViewController: UIViewController, UITableViewDataSource, UITable
     }
      //Số hàng trong một section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let hangmuccon = hangmucchicha[section].hangmucchi
-        return hangmuccon.count
+      //  let hangmuccon = chis[section].hangmucchi
+        return chis.count
     }
     
     //Số section hiển thị
     func numberOfSections(in tableView: UITableView) -> Int {
-        return hangmucchicha.count
+        return chis.count
     }
     //Chỉnh nội dung cho từng cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DongHangMucChiTableViewCell
         
         //Configure Cell
-        let event = hangmucchicha[indexPath.section].hangmucchi[indexPath.row]
+        let event = chis[indexPath.row]
         cell.configureCell(hangmucchi: event)
        
         
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let revenueType = chis[indexPath.row] as HangMucChi
+        
+        
+        myDelegate?.returnData(id: 0, name: revenueType.title)
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        self.navigationController?.popViewController(animated: true)
+    }
     //Set tiêu đề cho từng section
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return hangmucchicha[section].name
+   // func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    //    return chis[section].name
+   // }
+    func getDataChi() {
+        GetDataChi.getData(completionHandler: { (chis, error) in
+            if error == nil {
+                self.chis = chis!
+                DispatchQueue.main.async {
+                    self.myTable.reloadData()
+                }
+            } else {
+                print(error!)
+            }
+        })
     }
     
     

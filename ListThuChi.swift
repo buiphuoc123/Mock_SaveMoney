@@ -16,7 +16,7 @@ class ListThuChi
     
     class func listThuChiLines() -> [ThuChi]
     {
-        var thuchi = [ThuChi]()
+        let thuchi = [ThuChi]()
         
         
         return thuchi

@@ -11,7 +11,9 @@ import UIKit
 class DienGiaiViewController: UIViewController {
 
     @IBOutlet weak var tvDienGiai: UITextView!
-    
+    var myDelegate: SetValuePreviousVC?
+    var revenueTypeList: [RevenueType] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,20 +32,15 @@ class DienGiaiViewController: UIViewController {
             self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Bạn chưa điền đầy đủ thông tin")
         }
         else {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
-            self.present(vc!, animated: true, completion: nil)
-        }
+            myDelegate?.returnData(id: 1, name: tvDienGiai.text)
+            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            self.navigationController?.popViewController(animated: true)        }
         
     }
     
     @IBAction func ClickXoa(_ sender: Any) {
         tvDienGiai.text = ""
-    }
-    //Hàm lấy nội dung từ diễn giải, đưa vào mục thu.
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let homeController = segue.destination as! HomeViewController
-        
-        homeController.dienGiai = tvDienGiai.text!
     }
     
     func showSuccessAlert(titleAlert:NSString,messageAlert:NSString)

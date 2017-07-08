@@ -25,4 +25,15 @@ class ThuChi
         self.sotien = sotien
         
     }
+    
+    init(json: [String: AnyObject]) {
+        if let soTien = json["so_tien"] as? Int {
+            self.sotien = String("\(soTien)")
+        } else {
+            self.sotien = "0"
+        }
+        self.namemuc = (json["ten_giao_dich"] as? String)!
+        self.title = (json["loai_giao_dich"] as? String)!
+        self.ngay = (json["ngay"] as? String)!
+    }
 }

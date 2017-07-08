@@ -12,18 +12,14 @@ class ListThuChiViewController: UIViewController, UITableViewDataSource {
 
     
     @IBOutlet weak var myTable: UITableView!
-    var thus: [ThuChi]{
-        var title: String
-        var name: String
-        var day: String
-        var money1: String
-        return ListThuChi.listThuChiLines()
-    }
+    var thus: [ThuChi] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         myTable.dataSource = self
+        
+        getData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,5 +55,18 @@ class ListThuChiViewController: UIViewController, UITableViewDataSource {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func getData() {
+        GetData.getData(completionHandler: { (thus, error) in
+            if error == nil {
+                self.thus = thus!
+                
+                DispatchQueue.main.async {
+                    self.myTable.reloadData()
+                }
+            } else {
+                print(error)
+            }
+        })
+    }
 }
