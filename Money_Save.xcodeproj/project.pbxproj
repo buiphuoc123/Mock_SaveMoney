@@ -31,6 +31,8 @@
 		DF3373EE1F0E73F40054D54B /* HangMucThuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3373ED1F0E73F40054D54B /* HangMucThuViewController.swift */; };
 		DF3373F01F0E87C80054D54B /* DongHangMucThuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3373EF1F0E87C80054D54B /* DongHangMucThuTableViewCell.swift */; };
 		DF3373F21F0E94D50054D54B /* DienGiaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3373F11F0E94D50054D54B /* DienGiaiViewController.swift */; };
+		DF349C851F13345A007ADC2D /* ThemHangMucChiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF349C841F133459007ADC2D /* ThemHangMucChiViewController.swift */; };
+		DF349C871F1337DE007ADC2D /* ThemHangMucThuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF349C861F1337DE007ADC2D /* ThemHangMucThuViewController.swift */; };
 		DF3800011EE5B3BF00C967C2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3800001EE5B3BF00C967C2 /* RegisterViewController.swift */; };
 		DF3800031EE5C10600C967C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3800021EE5C10600C967C2 /* LoginViewController.swift */; };
 		DFA2D7761EE710AA009CCAA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2D7751EE710AA009CCAA4 /* HomeViewController.swift */; };
@@ -90,6 +92,8 @@
 		DF3373ED1F0E73F40054D54B /* HangMucThuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangMucThuViewController.swift; sourceTree = "<group>"; };
 		DF3373EF1F0E87C80054D54B /* DongHangMucThuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DongHangMucThuTableViewCell.swift; sourceTree = "<group>"; };
 		DF3373F11F0E94D50054D54B /* DienGiaiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DienGiaiViewController.swift; sourceTree = "<group>"; };
+		DF349C841F133459007ADC2D /* ThemHangMucChiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemHangMucChiViewController.swift; sourceTree = "<group>"; };
+		DF349C861F1337DE007ADC2D /* ThemHangMucThuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemHangMucThuViewController.swift; sourceTree = "<group>"; };
 		DF3800001EE5B3BF00C967C2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DF3800021EE5C10600C967C2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DFA2D7751EE710AA009CCAA4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				DF2B5B6F1F0F4E86006C84E4 /* DongThuChiTableViewCell.swift */,
 				DF2B5B751F0FC17C006C84E4 /* HangMucChiViewController.swift */,
 				DF2B5B771F0FC1D1006C84E4 /* DongHangMucChiTableViewCell.swift */,
+				DF349C841F133459007ADC2D /* ThemHangMucChiViewController.swift */,
+				DF349C861F1337DE007ADC2D /* ThemHangMucThuViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -568,10 +574,12 @@
 				DF3373F01F0E87C80054D54B /* DongHangMucThuTableViewCell.swift in Sources */,
 				DFA2D7761EE710AA009CCAA4 /* HomeViewController.swift in Sources */,
 				7A44F0B71F108BCB002429A0 /* getData.swift in Sources */,
+				DF349C871F1337DE007ADC2D /* ThemHangMucThuViewController.swift in Sources */,
 				DFA2D7781EE71441009CCAA4 /* InsertViewController.swift in Sources */,
 				DF2B5B681F0F2D9B006C84E4 /* DayViewController.swift in Sources */,
 				7A44F0BD1F10A7D0002429A0 /* getDataThu.swift in Sources */,
 				7A44F0BB1F109C10002429A0 /* User.swift in Sources */,
+				DF349C851F13345A007ADC2D /* ThemHangMucChiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
