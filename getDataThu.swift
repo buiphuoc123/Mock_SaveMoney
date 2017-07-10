@@ -37,8 +37,8 @@ class GetDataThu {
         ref = Database.database().reference()
         let user = User.uid
         let data = [
-            "ten_muc_thu": transactionModel.title,
-            "tenhinh": transactionModel.image,
+            "ten": transactionModel.title,
+            "hinh": "default.png",
             
             
             ] as [String : Any]

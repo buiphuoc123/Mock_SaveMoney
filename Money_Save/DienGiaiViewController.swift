@@ -32,7 +32,7 @@ class DienGiaiViewController: UIViewController {
             self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Bạn chưa điền đầy đủ thông tin")
         }
         else {
-            myDelegate?.returnData(id: 1, name: tvDienGiai.text)
+            myDelegate?.returnData(id: 1, name: tvDienGiai.text, image: nil)
             
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
             self.navigationController?.popViewController(animated: true)        }

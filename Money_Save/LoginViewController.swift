@@ -55,6 +55,7 @@ class LoginViewController: UIViewController {
             else
             {
                 User.uid = user?.uid
+                User.email = user?.email
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "InsertViewController") as! InsertViewController
                 self.navigationController?.pushViewController(vc, animated: true)
             }

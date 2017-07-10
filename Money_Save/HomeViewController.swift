@@ -23,6 +23,7 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
     @IBOutlet weak var lblTenMuc: UILabel!
     
     
+    @IBOutlet weak var nameImage: UIImageView!
     @IBOutlet weak var tenHangMuctxt: UITextField!
     
     var myMoney = String()
@@ -37,7 +38,11 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblMyMoney.text = myMoney
-        lblNgay.text = "Hôm nay"
+        //lblNgay.text = "Hôm nay"
+        let day = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/mm/yyyy"
+        lblNgay.text = dateFormatter.string(from: day) + " (Hôm nay)"
         
       
     }
@@ -52,9 +57,11 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
         switch segmentHangMuc.selectedSegmentIndex {
         case 0:
             lblTenMuc.text = "Mục chi"
+           // lblTenMuc.textColor = UIColor.blue
             flag = 1
         case 1:
             lblTenMuc.text = "Mục thu"
+            //lblTenMuc.textColor = UIColor.red
             flag = 2
         default:
             break
@@ -116,13 +123,13 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
         
     }
     
-    
-    @IBAction func clickShowList(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListThuChiViewController")
-        self.present(vc!, animated: true, completion: nil)
-
-        
+    @IBAction func btnShowlist(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListThuChiViewController") as! ListThuChiViewController
+        //self.present(vc!, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+   
     
     func showSuccessAlert(titleAlert:NSString,messageAlert:NSString)
     {
@@ -139,10 +146,13 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
     }
     
     
-    func returnData(id: Int?, name: String?) {
+    func returnData(id: Int?, name: String?, image: UIImage?) {
         if id == 0 {
             if let ob = name {
                 tenHangMuctxt.text = ob
+            }
+            if let img = image{
+                nameImage.image = img
             }
         }
         if id == 1 {
@@ -150,11 +160,17 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
             {
                 lblDienGiai.text = ob1
             }
+            if let img = image{
+                nameImage.image = img
+            }
         }
         if id == 2 {
             if let ob1 = name
             {
                 lblNgay.text = ob1
+            }
+            if let img = image{
+                nameImage.image = img
             }
         }
     }

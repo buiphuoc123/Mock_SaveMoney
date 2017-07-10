@@ -45,6 +45,16 @@ class InsertViewController: UIViewController {
     }
     
     
+    
+   
+    
+    @IBAction func btnQuanly(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "QuanlyUserViewController") as! QuanlyUserViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     func showSuccessAlert(titleAlert:NSString,messageAlert:NSString)
     {
         let alert:UIAlertController=UIAlertController(title:titleAlert as String, message: messageAlert as String, preferredStyle: UIAlertControllerStyle.alert)

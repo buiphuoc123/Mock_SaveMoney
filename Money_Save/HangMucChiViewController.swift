@@ -27,7 +27,7 @@ class HangMucChiViewController: UIViewController, UITableViewDataSource, UITable
     // Load lại dữ liệu sau khi chuyển view trở lại
     override func viewWillAppear(_ animated: Bool) {
        
-        self.myTable.reloadData()
+        getDataChi()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,10 +40,6 @@ class HangMucChiViewController: UIViewController, UITableViewDataSource, UITable
         return chis.count
     }
     
-    //Số section hiển thị
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return chis.count
-    }
     //Chỉnh nội dung cho từng cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DongHangMucChiTableViewCell
@@ -59,18 +55,24 @@ class HangMucChiViewController: UIViewController, UITableViewDataSource, UITable
         let revenueType = chis[indexPath.row] as HangMucChi
         
         
-        myDelegate?.returnData(id: 0, name: revenueType.title)
+        myDelegate?.returnData(id: 0, name: revenueType.title, image: revenueType.image)
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         self.navigationController?.popViewController(animated: true)
     }
-    //Set tiêu đề cho từng section
-   // func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    //    return chis[section].name
-   // }
+    
+    @IBAction func btnThemHangMucChi(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ThemHangMucChiViewController") as! ThemHangMucChiViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
     func getDataChi() {
+        
         GetDataChi.getData(completionHandler: { (chis, error) in
             if error == nil {
+                self.chis = []
                 self.chis = chis!
                 DispatchQueue.main.async {
                     self.myTable.reloadData()

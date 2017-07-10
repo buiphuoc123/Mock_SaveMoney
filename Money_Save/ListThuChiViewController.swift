@@ -59,6 +59,7 @@ class ListThuChiViewController: UIViewController, UITableViewDataSource {
     func getData() {
         GetData.getData(completionHandler: { (thus, error) in
             if error == nil {
+                self.thus = []
                 self.thus = thus!
                 
                 DispatchQueue.main.async {

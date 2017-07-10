@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SetValuePreviousVC {
-    func returnData(id: Int?, name: String?)
+    func returnData(id: Int?, name: String?, image: UIImage?)
 }
 class HangMucThuViewController: UIViewController, UITableViewDataSource , UITableViewDelegate {
 
@@ -27,6 +27,9 @@ class HangMucThuViewController: UIViewController, UITableViewDataSource , UITabl
         myTable.dataSource = self
         myTable.delegate = self
         
+        getDataThu()
+    }
+    override func viewWillAppear(_ animated: Bool) {
         getDataThu()
     }
 
@@ -55,7 +58,7 @@ class HangMucThuViewController: UIViewController, UITableViewDataSource , UITabl
         let revenueType = mucs[indexPath.row] as Muc
         
         
-        myDelegate?.returnData(id: 0, name: revenueType.title)
+        myDelegate?.returnData(id: 0, name: revenueType.title, image: revenueType.image)
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         self.navigationController?.popViewController(animated: true)
@@ -63,6 +66,7 @@ class HangMucThuViewController: UIViewController, UITableViewDataSource , UITabl
     func getDataThu() {
         GetDataThu.getData(completionHandler: { (mucs, error) in
             if error == nil {
+                self.mucs = []
                 self.mucs = mucs!
                 
                 DispatchQueue.main.async {
@@ -75,7 +79,10 @@ class HangMucThuViewController: UIViewController, UITableViewDataSource , UITabl
     }
 
     @IBAction func btnThemHangMucThu(_ sender: Any) {
-        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ThemHangMucThuViewController") as! ThemHangMucThuViewController
+       // vc.myDelegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
 
     /*

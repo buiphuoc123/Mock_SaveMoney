@@ -50,7 +50,7 @@ class DayViewController: UIViewController {
             self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Bạn chưa điền đầy đủ thông tin")
         }
         else {
-            myDelegate?.returnData(id: 2, name: dayPicker.text)
+            myDelegate?.returnData(id: 2, name: dayPicker.text, image: nil)
 
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
             

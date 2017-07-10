@@ -33,12 +33,12 @@ class GetDataChi {
             }
         })
     }
-    static func AddData(transactionModel: Muc, completionHandler: @escaping (_ error: Error?) -> Void){
+    static func AddData(transactionModel: HangMucChi, completionHandler: @escaping (_ error: Error?) -> Void){
         ref = Database.database().reference()
         let user = User.uid
         let data = [
-            "ten_muc_chi": transactionModel.title,
-            "tenhinh": transactionModel.image,
+            "ten": transactionModel.title,
+            "hinh": "default.png",
             
             
             ] as [String : Any]

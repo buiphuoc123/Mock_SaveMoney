@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bUa-2I-Z0A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bUa-2I-Z0A">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Save Money-->
+        <!--Quản lý chi tiêu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,31 +23,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VUI LÒNG ĐĂNG NHẬP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeJ-c6-xK8">
-                                <rect key="frame" x="0.0" y="40" width="375" height="25.5"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vV-yf-3iV">
-                                <rect key="frame" x="35" y="280.5" width="305" height="30.5"/>
+                                <rect key="frame" x="35" y="281" width="305" height="31"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7K-Yb-Ye0">
-                                <rect key="frame" x="35" y="311" width="305" height="33.5"/>
+                                <rect key="frame" x="35" y="312" width="305" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dvw-ld-x8z">
-                                <rect key="frame" x="35" y="344.5" width="305" height="30"/>
+                                <rect key="frame" x="35" y="345" width="305" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2i-2e-jqh">
-                                <rect key="frame" x="35" y="399.5" width="305" height="37"/>
+                                <rect key="frame" x="35" y="400" width="305" height="37"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUk-1j-xi3">
-                                <rect key="frame" x="35" y="461.5" width="305" height="37"/>
+                                <rect key="frame" x="35" y="462" width="305" height="37"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Đăng kí">
@@ -70,16 +70,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heo" translatesAutoresizingMaskIntoConstraints="NO" id="suY-r9-pel">
-                                <rect key="frame" x="62.5" y="70.5" width="250" height="167"/>
+                                <rect key="frame" x="63" y="71" width="250" height="167"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên đăng nhập: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT6-QE-0EB">
-                                <rect key="frame" x="35" y="247.5" width="305" height="33"/>
+                                <rect key="frame" x="35" y="248" width="305" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoặc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjY-lK-hIL">
-                                <rect key="frame" x="35" y="436.5" width="305" height="25"/>
+                                <rect key="frame" x="35" y="437" width="305" height="25"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -124,7 +124,7 @@
                             <constraint firstItem="Dvw-ld-x8z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="35" id="zdL-PH-C3z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Save Money" id="i5K-U0-vQN"/>
+                    <navigationItem key="navigationItem" title="Quản lý chi tiêu" id="i5K-U0-vQN"/>
                     <connections>
                         <outlet property="passwordText" destination="Dvw-ld-x8z" id="qwc-i0-xTF"/>
                         <outlet property="usernameText" destination="5vV-yf-3iV" id="kAl-9D-Bwb"/>
@@ -134,7 +134,7 @@
             </objects>
             <point key="canvasLocation" x="468" y="483"/>
         </scene>
-        <!--Insert View Controller-->
+        <!--Nhập tiền vào ví-->
         <scene sceneID="ZoO-89-vJ8">
             <objects>
                 <viewController storyboardIdentifier="InsertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hHP-9a-7Wm" customClass="InsertViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-FT-yY1">
-                                <rect key="frame" x="150.5" y="412.5" width="75" height="44.5"/>
+                                <rect key="frame" x="150" y="334" width="75" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -165,34 +165,17 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="insertmoney" translatesAutoresizingMaskIntoConstraints="NO" id="N13-yt-5xo">
-                                <rect key="frame" x="62" y="109" width="250" height="167"/>
+                                <rect key="frame" x="62" y="30" width="250" height="167"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YtV-A2-Vlw">
-                                <rect key="frame" x="0.0" y="25" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Nhập tiền vào ví" id="qnH-n7-7f7">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="TaT-2O-EH8">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bu6-mO-xXJ">
-                                                <rect key="frame" x="308" y="0.0" width="51" height="43"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" image="user">
-                                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số tiền" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UrB-gh-9lE">
-                                <rect key="frame" x="63" y="296" width="250" height="44.5"/>
+                                <rect key="frame" x="63" y="217" width="250" height="45"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Đơn vị: Vnđ)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keg-Pi-3jM">
-                                <rect key="frame" x="137.5" y="350.5" width="99.5" height="37"/>
+                                <rect key="frame" x="137" y="272" width="100" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -204,24 +187,27 @@
                             <constraint firstItem="aaU-FT-yY1" firstAttribute="height" secondItem="Y9Y-kf-I75" secondAttribute="height" multiplier="1/15" id="0Ac-1T-4ag"/>
                             <constraint firstItem="UrB-gh-9lE" firstAttribute="top" secondItem="N13-yt-5xo" secondAttribute="bottom" constant="20" id="1Fh-lx-6RQ"/>
                             <constraint firstItem="N13-yt-5xo" firstAttribute="width" secondItem="Y9Y-kf-I75" secondAttribute="width" multiplier="2/3" id="41a-Ak-4XV"/>
-                            <constraint firstItem="N13-yt-5xo" firstAttribute="top" secondItem="YtV-A2-Vlw" secondAttribute="bottom" constant="40" id="Cvq-6B-Did"/>
-                            <constraint firstItem="YtV-A2-Vlw" firstAttribute="leading" secondItem="Y9Y-kf-I75" secondAttribute="leading" id="EmO-wd-tEX"/>
                             <constraint firstItem="UrB-gh-9lE" firstAttribute="centerX" secondItem="Y9Y-kf-I75" secondAttribute="centerX" id="JSZ-8L-cEL"/>
                             <constraint firstItem="keg-Pi-3jM" firstAttribute="top" secondItem="UrB-gh-9lE" secondAttribute="bottom" constant="10" id="Ncl-uK-2AB"/>
                             <constraint firstItem="N13-yt-5xo" firstAttribute="centerX" secondItem="Y9Y-kf-I75" secondAttribute="centerX" id="Nlt-3b-NNl"/>
                             <constraint firstItem="N13-yt-5xo" firstAttribute="height" secondItem="Y9Y-kf-I75" secondAttribute="height" multiplier="1/4" id="Np2-Oi-ahk"/>
                             <constraint firstItem="keg-Pi-3jM" firstAttribute="centerX" secondItem="Y9Y-kf-I75" secondAttribute="centerX" id="StT-Vz-98U"/>
-                            <constraint firstAttribute="trailing" secondItem="YtV-A2-Vlw" secondAttribute="trailing" id="SxP-Zr-jwn"/>
                             <constraint firstItem="keg-Pi-3jM" firstAttribute="height" secondItem="Y9Y-kf-I75" secondAttribute="height" multiplier="1/18" id="Uwk-2n-hHq"/>
                             <constraint firstItem="aaU-FT-yY1" firstAttribute="top" secondItem="keg-Pi-3jM" secondAttribute="bottom" constant="25" id="Xbj-k2-Lrb"/>
                             <constraint firstItem="aaU-FT-yY1" firstAttribute="centerX" secondItem="Y9Y-kf-I75" secondAttribute="centerX" id="ZBH-jZ-xS6"/>
                             <constraint firstItem="aaU-FT-yY1" firstAttribute="width" secondItem="Y9Y-kf-I75" secondAttribute="width" multiplier="1/5" id="atx-wx-PcZ"/>
-                            <constraint firstItem="YtV-A2-Vlw" firstAttribute="top" secondItem="gq1-1F-C6F" secondAttribute="bottom" constant="5" id="jdO-mc-eM5"/>
+                            <constraint firstItem="N13-yt-5xo" firstAttribute="top" secondItem="gq1-1F-C6F" secondAttribute="bottom" constant="10" id="fmu-fc-bXK"/>
                             <constraint firstItem="UrB-gh-9lE" firstAttribute="width" secondItem="Y9Y-kf-I75" secondAttribute="width" multiplier="2/3" id="mIJ-om-thD"/>
                             <constraint firstItem="UrB-gh-9lE" firstAttribute="height" secondItem="Y9Y-kf-I75" secondAttribute="height" multiplier="1/15" id="mIO-hq-i8m"/>
-                            <constraint firstItem="YtV-A2-Vlw" firstAttribute="centerX" secondItem="Y9Y-kf-I75" secondAttribute="centerX" id="rb2-JT-3oj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Nhập tiền vào ví" id="9cW-T8-ayx">
+                        <barButtonItem key="rightBarButtonItem" image="user_2" id="LwB-bl-7uN">
+                            <connections>
+                                <action selector="btnQuanly:" destination="hHP-9a-7Wm" id="ejQ-Bp-K5b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lblSoTien" destination="UrB-gh-9lE" id="7gu-Ag-Pyy"/>
                     </connections>
@@ -230,7 +216,7 @@
             </objects>
             <point key="canvasLocation" x="-823.20000000000005" y="819.94002998500753"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Số tiền trong ví-->
         <scene sceneID="ww4-2a-Zws">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="36k-cT-mTP" customClass="HomeViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
@@ -242,14 +228,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="đ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80r-qe-qh0">
-                                <rect key="frame" x="320.5" y="67" width="27" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="đ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80r-qe-qh0">
+                                <rect key="frame" x="321" y="67" width="27" height="35"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Qco-e9-EUP">
-                                <rect key="frame" x="19" y="111" width="337.5" height="36"/>
+                                <rect key="frame" x="19" y="70" width="338" height="36"/>
                                 <segments>
                                     <segment title="Chi tiền"/>
                                     <segment title="Thu tiền"/>
@@ -259,25 +245,25 @@
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số tiền" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12z-ba-ToM">
-                                <rect key="frame" x="62.5" y="151" width="250" height="30"/>
+                                <rect key="frame" x="63" y="110" width="250" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="đ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BI2-gi-7U0">
-                                <rect key="frame" x="314.5" y="156" width="25" height="28"/>
+                                <rect key="frame" x="315" y="115" width="25" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mục chi: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqY-Ld-vYf">
-                                <rect key="frame" x="19" y="186" width="337.5" height="35"/>
+                                <rect key="frame" x="19" y="145" width="338" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hôm nay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRB-H1-BhW">
-                                <rect key="frame" x="62.5" y="388" width="250" height="35"/>
+                                <rect key="frame" x="63" y="347" width="250" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -292,25 +278,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diễn giải: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGv-Jh-NcE">
-                                <rect key="frame" x="19" y="272" width="337.5" height="35"/>
+                                <rect key="frame" x="19" y="231" width="338" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNf-AA-c2H">
-                                <rect key="frame" x="19" y="345" width="337.5" height="35"/>
+                                <rect key="frame" x="19" y="304" width="338" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9hm-rF-1T3">
-                                <rect key="frame" x="62.5" y="226" width="250" height="35"/>
+                                <rect key="frame" x="63" y="185" width="250" height="35"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StT-yH-bYe">
-                                <rect key="frame" x="317.5" y="226" width="37.5" height="35"/>
+                                <rect key="frame" x="318" y="185" width="37" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="edit">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -320,13 +306,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YgH-uP-U64">
-                                <rect key="frame" x="62.5" y="308" width="250" height="35"/>
+                                <rect key="frame" x="63" y="267" width="250" height="35"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Iz-li-DA8">
-                                <rect key="frame" x="317.5" y="308" width="37.5" height="35"/>
+                                <rect key="frame" x="318" y="267" width="37" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="edit">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -336,7 +322,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxC-RR-PRl">
-                                <rect key="frame" x="19" y="433" width="337.5" height="55.5"/>
+                                <rect key="frame" x="19" y="392" width="338" height="56"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Lưu">
@@ -346,48 +332,18 @@
                                     <action selector="clickLuu:" destination="36k-cT-mTP" eventType="touchUpInside" id="cDz-Il-uYX"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySC-X6-pTK">
-                                <rect key="frame" x="1" y="21" width="373" height="44"/>
-                                <items>
-                                    <navigationItem title="Số tiền trong ví" id="3XQ-iw-oA6">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="zkv-Vm-Ih4">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="knh-uJ-uEy">
-                                                <rect key="frame" x="16" y="1" width="41" height="41"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" image="listthuchi">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="clickShowList:" destination="36k-cT-mTP" eventType="touchUpInside" id="S3u-77-1Xi"/>
-                                                </connections>
-                                            </button>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="T2i-KR-fv6">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZIb-Aa-5vM">
-                                                <rect key="frame" x="312" y="1" width="45" height="41"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" image="checked">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhH-E7-ANI">
-                                <rect key="frame" x="62.5" y="66" width="250" height="37"/>
+                                <rect key="frame" x="63" y="25" width="250" height="37"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="bG0-w1-Z5S">
-                                <rect key="frame" x="21.5" y="222.5" width="37.5" height="44.5"/>
+                                <rect key="frame" x="23" y="182" width="37" height="44"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lt-Ds-ekZ">
-                                <rect key="frame" x="317.5" y="388" width="37.5" height="35"/>
+                                <rect key="frame" x="318" y="347" width="37" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="edit">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -406,14 +362,13 @@
                             <constraint firstItem="12z-ba-ToM" firstAttribute="top" secondItem="Qco-e9-EUP" secondAttribute="bottom" constant="5" id="7sT-Wb-IsI"/>
                             <constraint firstItem="9hm-rF-1T3" firstAttribute="leading" secondItem="bG0-w1-Z5S" secondAttribute="trailing" constant="3" id="9JH-w9-ehe"/>
                             <constraint firstItem="Qco-e9-EUP" firstAttribute="top" secondItem="yhH-E7-ANI" secondAttribute="bottom" constant="8" id="Ahb-Iy-bPM"/>
-                            <constraint firstItem="ySC-X6-pTK" firstAttribute="centerX" secondItem="mIB-15-Ytd" secondAttribute="centerX" id="Ail-0E-UEz"/>
                             <constraint firstItem="NxC-RR-PRl" firstAttribute="centerX" secondItem="mIB-15-Ytd" secondAttribute="centerX" id="Bg0-IA-OSf"/>
                             <constraint firstItem="9hm-rF-1T3" firstAttribute="width" secondItem="mIB-15-Ytd" secondAttribute="width" multiplier="2/3" id="Blg-Na-Wnj"/>
                             <constraint firstItem="pRB-H1-BhW" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/19" id="CB9-qn-Uc9"/>
+                            <constraint firstItem="yhH-E7-ANI" firstAttribute="top" secondItem="cOm-Va-RUY" secondAttribute="bottom" constant="5" id="DuX-lx-BuP"/>
                             <constraint firstItem="bG0-w1-Z5S" firstAttribute="width" secondItem="mIB-15-Ytd" secondAttribute="width" multiplier="1/10" id="Duv-HZ-JSG"/>
                             <constraint firstItem="wGv-Jh-NcE" firstAttribute="top" secondItem="bG0-w1-Z5S" secondAttribute="bottom" constant="5" id="Dx0-6w-IA8"/>
                             <constraint firstItem="Qco-e9-EUP" firstAttribute="width" secondItem="mIB-15-Ytd" secondAttribute="width" multiplier="9/10" id="DxR-MR-gM7"/>
-                            <constraint firstItem="80r-qe-qh0" firstAttribute="top" secondItem="ySC-X6-pTK" secondAttribute="bottom" constant="2" id="EsX-S5-P29"/>
                             <constraint firstItem="RqY-Ld-vYf" firstAttribute="centerX" secondItem="mIB-15-Ytd" secondAttribute="centerX" id="Fot-CE-WPr"/>
                             <constraint firstItem="bG0-w1-Z5S" firstAttribute="top" secondItem="RqY-Ld-vYf" secondAttribute="bottom" constant="2" id="Gck-ck-Rx9"/>
                             <constraint firstItem="6Iz-li-DA8" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/19" id="HSj-5z-rEk"/>
@@ -427,16 +382,13 @@
                             <constraint firstItem="wGv-Jh-NcE" firstAttribute="width" secondItem="mIB-15-Ytd" secondAttribute="width" multiplier="9/10" id="TAK-IZ-VvT"/>
                             <constraint firstItem="80r-qe-qh0" firstAttribute="width" secondItem="mIB-15-Ytd" secondAttribute="width" multiplier="1/14" id="Uen-4Z-Iwy"/>
                             <constraint firstItem="RqY-Ld-vYf" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/19" id="WfH-GN-y7x"/>
-                            <constraint firstItem="yhH-E7-ANI" firstAttribute="top" secondItem="ySC-X6-pTK" secondAttribute="bottom" constant="1" id="WlW-SX-bQ4"/>
                             <constraint firstItem="KNf-AA-c2H" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/19" id="WxM-ZC-OBA"/>
                             <constraint firstItem="Qco-e9-EUP" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/19" id="a5N-iW-SWf"/>
                             <constraint firstItem="YgH-uP-U64" firstAttribute="top" secondItem="wGv-Jh-NcE" secondAttribute="bottom" constant="1" id="blp-mY-bmo"/>
                             <constraint firstItem="6Iz-li-DA8" firstAttribute="width" secondItem="mIB-15-Ytd" secondAttribute="width" multiplier="1/10" id="c5g-PC-ihd"/>
-                            <constraint firstAttribute="trailing" secondItem="ySC-X6-pTK" secondAttribute="trailing" constant="1" id="cbY-7b-001"/>
                             <constraint firstItem="StT-yH-bYe" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/19" id="chg-iP-oaT"/>
                             <constraint firstItem="pRB-H1-BhW" firstAttribute="width" secondItem="mIB-15-Ytd" secondAttribute="width" multiplier="2/3" id="dX9-s8-Aeb"/>
                             <constraint firstItem="BI2-gi-7U0" firstAttribute="leading" secondItem="12z-ba-ToM" secondAttribute="trailing" constant="2" id="dxw-HA-4Ft"/>
-                            <constraint firstItem="ySC-X6-pTK" firstAttribute="top" secondItem="cOm-Va-RUY" secondAttribute="bottom" constant="1" id="e4q-pb-ZDT"/>
                             <constraint firstItem="BI2-gi-7U0" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/24" id="e9V-gn-cEZ"/>
                             <constraint firstItem="NxC-RR-PRl" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/12" id="eCr-ww-Yjt"/>
                             <constraint firstItem="YgH-uP-U64" firstAttribute="centerX" secondItem="mIB-15-Ytd" secondAttribute="centerX" id="eUe-uV-DRe"/>
@@ -449,7 +401,6 @@
                             <constraint firstItem="yhH-E7-ANI" firstAttribute="centerX" secondItem="mIB-15-Ytd" secondAttribute="centerX" id="hiD-zg-VuJ"/>
                             <constraint firstItem="80r-qe-qh0" firstAttribute="leading" secondItem="yhH-E7-ANI" secondAttribute="trailing" constant="8" id="k6Y-gU-F8Q"/>
                             <constraint firstItem="6Iz-li-DA8" firstAttribute="top" secondItem="wGv-Jh-NcE" secondAttribute="bottom" constant="1" id="kSx-KV-QCZ"/>
-                            <constraint firstItem="ySC-X6-pTK" firstAttribute="leading" secondItem="mIB-15-Ytd" secondAttribute="leading" constant="1" id="lHv-6i-9y6"/>
                             <constraint firstItem="bG0-w1-Z5S" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/15" id="lsh-av-PzF"/>
                             <constraint firstItem="pRB-H1-BhW" firstAttribute="centerX" secondItem="mIB-15-Ytd" secondAttribute="centerX" id="mMq-31-BoY"/>
                             <constraint firstItem="YgH-uP-U64" firstAttribute="height" secondItem="mIB-15-Ytd" secondAttribute="height" multiplier="1/19" id="mRh-gk-UDm"/>
@@ -468,11 +419,24 @@
                             <constraint firstItem="StT-yH-bYe" firstAttribute="width" secondItem="mIB-15-Ytd" secondAttribute="width" multiplier="1/10" id="zfH-qd-k3M"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Số tiền trong ví" id="QOs-92-FVV">
+                        <barButtonItem key="leftBarButtonItem" image="list1" id="hrS-Q5-GmB">
+                            <connections>
+                                <action selector="btnShowlist:" destination="36k-cT-mTP" id="6H9-p8-CGB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="check1" id="Pl7-jb-lz9">
+                            <connections>
+                                <action selector="clickLuu:" destination="36k-cT-mTP" id="r86-3J-OjJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lblDienGiai" destination="YgH-uP-U64" id="Hdd-E5-4LD"/>
                         <outlet property="lblMyMoney" destination="yhH-E7-ANI" id="ab0-r2-E0I"/>
                         <outlet property="lblNgay" destination="pRB-H1-BhW" id="Pkm-qK-h9G"/>
                         <outlet property="lblTenMuc" destination="RqY-Ld-vYf" id="RBq-ib-lre"/>
+                        <outlet property="nameImage" destination="bG0-w1-Z5S" id="Vy2-je-CSS"/>
                         <outlet property="segmentHangMuc" destination="Qco-e9-EUP" id="aGk-QK-YG1"/>
                         <outlet property="soTientxt" destination="12z-ba-ToM" id="uFV-dl-LrB"/>
                         <outlet property="tenHangMuctxt" destination="9hm-rF-1T3" id="mnV-SZ-bx7"/>
@@ -495,7 +459,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zS8-Ys-wIB">
-                                <rect key="frame" x="10" y="74" width="355" height="222.5"/>
+                                <rect key="frame" x="10" y="74" width="355" height="223"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -518,7 +482,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5g-TP-uOe">
-                                <rect key="frame" x="185" y="347" width="62.5" height="35"/>
+                                <rect key="frame" x="185" y="347" width="63" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <state key="normal" title="Xong">
@@ -575,14 +539,14 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e9H-aJ-l6z" id="IEt-Lj-OhU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-QA-14F">
-                                                    <rect key="frame" x="20" y="7.5" width="53.5" height="43.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-QA-14F">
+                                                    <rect key="frame" x="20" y="8" width="54" height="43"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lương" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0J-No-qwm">
-                                                    <rect key="frame" x="83.5" y="15" width="250" height="29"/>
+                                                    <rect key="frame" x="84" y="15" width="250" height="29"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -618,10 +582,10 @@
                                                 <rect key="frame" x="313" y="7" width="46" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Thêm"/>
+                                                <connections>
+                                                    <action selector="btnThemHangMucThu:" destination="pOe-qp-Xpz" eventType="touchUpInside" id="hhu-js-AtH"/>
+                                                </connections>
                                             </button>
-                                            <connections>
-                                                <action selector="btnThemHangMucThu:" destination="pOe-qp-Xpz" id="vFM-4p-VnN"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -733,6 +697,9 @@
                                                 <rect key="frame" x="318" y="4" width="41" height="36"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="add"/>
+                                                <connections>
+                                                    <action selector="btnThemHangMucChi:" destination="KrS-PA-sBx" eventType="touchUpInside" id="BXr-uK-pVw"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -749,11 +716,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bT7-mq-EmK">
-                                                    <rect key="frame" x="20" y="3" width="53.5" height="49"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="bT7-mq-EmK">
+                                                    <rect key="frame" x="20" y="3" width="54" height="49"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRz-no-CQX">
-                                                    <rect key="frame" x="93.5" y="15" width="187.5" height="31"/>
+                                                    <rect key="frame" x="94" y="15" width="187" height="31"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -799,7 +766,7 @@
             </objects>
             <point key="canvasLocation" x="3570.4000000000001" y="819.94002998500753"/>
         </scene>
-        <!--List Thu Chi View Controller-->
+        <!--ĐÃ GHI-->
         <scene sceneID="EEG-og-PWR">
             <objects>
                 <viewController storyboardIdentifier="ListThuChiViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GwQ-3M-sTb" customClass="ListThuChiViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
@@ -811,22 +778,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHg-0e-NSd">
-                                <rect key="frame" x="0.0" y="21" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Đã ghi" id="c9P-rb-Kct">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="MCX-H1-rdq">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="itB-5D-rLY">
-                                                <rect key="frame" x="313" y="1" width="46" height="41"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="add"/>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s8a-rj-AjW">
-                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="106" id="CYz-Rr-3f1" customClass="DongThuChiTableViewCell" customModule="Money_Save" customModuleProvider="target">
@@ -837,34 +790,34 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu/Chi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nq8-h2-loS">
-                                                    <rect key="frame" x="20" y="0.0" width="125" height="26.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="125" height="26"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên thu/chi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRf-A5-79K">
-                                                    <rect key="frame" x="40" y="31.5" width="125" height="26.5"/>
+                                                    <rect key="frame" x="40" y="31" width="125" height="27"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sY-PD-T9n">
-                                                    <rect key="frame" x="40" y="68" width="187.5" height="26.5"/>
+                                                    <rect key="frame" x="40" y="68" width="188" height="26"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-dO-hCx">
-                                                    <rect key="frame" x="172.5" y="36.5" width="187.5" height="26.5"/>
+                                                    <rect key="frame" x="173" y="36" width="187" height="27"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số tiền: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ds-xM-w42">
-                                                    <rect key="frame" x="232" y="0.0" width="125" height="26.5"/>
+                                                    <rect key="frame" x="232" y="0.0" width="125" height="26"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -908,23 +861,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="s8a-rj-AjW" firstAttribute="top" secondItem="iHg-0e-NSd" secondAttribute="bottom" constant="5" id="8DF-Uc-ly2"/>
-                            <constraint firstItem="iHg-0e-NSd" firstAttribute="leading" secondItem="Rxl-Mm-DP8" secondAttribute="leading" id="D8R-br-4cf"/>
                             <constraint firstItem="s8a-rj-AjW" firstAttribute="leading" secondItem="Rxl-Mm-DP8" secondAttribute="leading" id="DYd-7v-wZc"/>
                             <constraint firstAttribute="trailing" secondItem="s8a-rj-AjW" secondAttribute="trailing" id="JxP-z2-NXm"/>
-                            <constraint firstItem="iHg-0e-NSd" firstAttribute="centerX" secondItem="Rxl-Mm-DP8" secondAttribute="centerX" id="V8D-7p-Nyd"/>
+                            <constraint firstItem="s8a-rj-AjW" firstAttribute="top" secondItem="v0E-xL-c4J" secondAttribute="bottom" constant="10" id="epF-oC-IEn"/>
                             <constraint firstItem="Lh3-Ce-noR" firstAttribute="top" secondItem="s8a-rj-AjW" secondAttribute="bottom" id="fv3-W9-THb"/>
-                            <constraint firstItem="iHg-0e-NSd" firstAttribute="top" secondItem="v0E-xL-c4J" secondAttribute="bottom" constant="1" id="nji-0u-De3"/>
-                            <constraint firstAttribute="trailing" secondItem="iHg-0e-NSd" secondAttribute="trailing" id="uAT-cd-ek1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="ĐÃ GHI" id="ZNS-Kx-bFd">
+                        <barButtonItem key="rightBarButtonItem" image="add1" id="2R9-Tl-PAR"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTable" destination="s8a-rj-AjW" id="Zex-G1-2Cn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8RH-L3-GuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="1038.5307346326838"/>
+            <point key="canvasLocation" x="1262" y="962"/>
         </scene>
         <!--Them Hang Muc Chi View Controller-->
         <scene sceneID="STw-Su-gVT">
@@ -949,6 +901,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Huỷ"/>
+                                                <connections>
+                                                    <action selector="btnHuy:" destination="2q7-JE-eCI" eventType="touchUpInside" id="KRM-Lm-zvK"/>
+                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="btnHuy:" destination="2q7-JE-eCI" id="zQ4-tK-pH5"/>
@@ -960,6 +915,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Lưu"/>
+                                                <connections>
+                                                    <action selector="btnLuu1:" destination="2q7-JE-eCI" eventType="touchUpInside" id="uRg-Mw-5fw"/>
+                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="btnLuu1:" destination="2q7-JE-eCI" id="nHx-H9-AKU"/>
@@ -969,16 +927,16 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ozd-xx-0Y0">
-                                <rect key="frame" x="30" y="106" width="62.5" height="66.5"/>
+                                <rect key="frame" x="30" y="106" width="63" height="67"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên hạng mục" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dKL-WI-qVg">
-                                <rect key="frame" x="102.5" y="116" width="250" height="44.5"/>
+                                <rect key="frame" x="103" y="116" width="250" height="45"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdq-eM-0dD">
-                                <rect key="frame" x="19" y="232.5" width="337.5" height="55.5"/>
+                                <rect key="frame" x="19" y="233" width="338" height="55"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Lưu">
@@ -1015,12 +973,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBU-at-V6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2354" y="1573"/>
+            <point key="canvasLocation" x="1636" y="1631"/>
         </scene>
         <!--Them Hang Muc Thu View Controller-->
         <scene sceneID="pPg-hS-eIP">
             <objects>
-                <viewController storyboardIdentifier="mHangMucThuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wqf-kB-p7d" customClass="ThemHangMucThuViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThemHangMucThuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wqf-kB-p7d" customClass="ThemHangMucThuViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e1m-25-Pm8"/>
                         <viewControllerLayoutGuide type="bottom" id="g5j-uL-DCS"/>
@@ -1040,6 +998,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="Huỷ"/>
+                                                <connections>
+                                                    <action selector="btnHuy:" destination="Wqf-kB-p7d" eventType="touchUpInside" id="yTN-lq-bTj"/>
+                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="btnHuy:" destination="Wqf-kB-p7d" id="5uR-xs-RjR"/>
@@ -1051,6 +1012,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="Lưu"/>
+                                                <connections>
+                                                    <action selector="btnLuu1:" destination="Wqf-kB-p7d" eventType="touchUpInside" id="mmo-7F-7fW"/>
+                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="btnLuu1:" destination="Wqf-kB-p7d" id="gBr-gJ-R0W"/>
@@ -1060,10 +1024,10 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="59m-A4-8Jt">
-                                <rect key="frame" x="30" y="106" width="62.5" height="66.5"/>
+                                <rect key="frame" x="30" y="106" width="63" height="67"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHb-yg-b8Z">
-                                <rect key="frame" x="19" y="222.5" width="337.5" height="55.5"/>
+                                <rect key="frame" x="19" y="223" width="338" height="55"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Lưu">
@@ -1074,7 +1038,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên hạng mục" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DoE-zZ-qB1">
-                                <rect key="frame" x="97.5" y="111" width="250" height="47.5"/>
+                                <rect key="frame" x="98" y="111" width="250" height="48"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1101,12 +1065,76 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tenHangMuctxt" destination="DoE-zZ-qB1" id="TUA-Wo-Bco"/>
+                        <outlet property="tenHangMuctxt" destination="DoE-zZ-qB1" id="Gaz-lz-1Hc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ogz-fj-Fej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2892" y="1470"/>
+        </scene>
+        <!--Quản lý tài khoản-->
+        <scene sceneID="MGo-uV-Jzr">
+            <objects>
+                <viewController storyboardIdentifier="QuanlyUserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lp2-4w-2ka" customClass="QuanlyUserViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hYH-PR-Hkq"/>
+                        <viewControllerLayoutGuide type="bottom" id="FSG-iN-ifa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Xb-x1-CmC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tên tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k95-ux-98h">
+                                <rect key="frame" x="51" y="82" width="273" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TQ-Mh-D9r">
+                                <rect key="frame" x="0.0" y="214" width="150" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Đổi mật khẩu"/>
+                                <connections>
+                                    <action selector="btnDoiMatKhau:" destination="Lp2-4w-2ka" eventType="touchUpInside" id="JdT-ui-Qgc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlF-iG-PIv">
+                                <rect key="frame" x="16" y="275" width="150" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lịch sử thu chi"/>
+                                <connections>
+                                    <action selector="btnLichSuThuChi:" destination="Lp2-4w-2ka" eventType="touchUpInside" id="iVr-Nz-JHs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Xin chào người dùng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ6-5S-He9">
+                                <rect key="frame" x="86" y="34" width="273" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mật khẩu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgv-mI-r9u">
+                                <rect key="frame" x="44" y="142" width="273" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quản lý tài khoản" id="Nre-Oc-zii">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="FVT-TQ-zDK"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="matkhau" destination="Sgv-mI-r9u" id="99Y-ik-bGZ"/>
+                        <outlet property="tentaikhoan" destination="k95-ux-98h" id="bvQ-Xe-fBi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8H-Pe-MrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2810" y="2119"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="izm-SO-S04">
@@ -1121,37 +1149,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ĐĂNG KÍ TÀI KHOẢN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fva-03-YJH">
-                                <rect key="frame" x="91" y="40" width="193.5" height="24"/>
+                                <rect key="frame" x="91" y="40" width="194" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên tài khoản: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-80-KCE">
-                                <rect key="frame" x="35" y="246" width="305" height="33.5"/>
+                                <rect key="frame" x="35" y="246" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bz-mN-UPx">
-                                <rect key="frame" x="35" y="312" width="305" height="33.5"/>
+                                <rect key="frame" x="35" y="312" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên tài khoản" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ryf-pS-bYm">
-                                <rect key="frame" x="35" y="280.5" width="305" height="30.5"/>
+                                <rect key="frame" x="35" y="281" width="305" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NpB-PE-Vzo">
-                                <rect key="frame" x="35" y="346.5" width="305" height="30.5"/>
+                                <rect key="frame" x="35" y="347" width="305" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Xác nhận mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uGm-Ui-xVB">
-                                <rect key="frame" x="35" y="412.5" width="305" height="30.5"/>
+                                <rect key="frame" x="35" y="413" width="305" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -1165,10 +1193,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heo" translatesAutoresizingMaskIntoConstraints="NO" id="PP9-CB-tMm">
-                                <rect key="frame" x="62.5" y="69" width="250" height="167"/>
+                                <rect key="frame" x="63" y="69" width="250" height="167"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác nhận mật khẩu:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-5C-wIe">
-                                <rect key="frame" x="35" y="378" width="305" height="33.5"/>
+                                <rect key="frame" x="35" y="378" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1237,10 +1265,10 @@
             </objects>
             <point key="canvasLocation" x="1317.5999999999999" y="370.16491754122939"/>
         </scene>
-        <!--View Controller-->
+        <!--Doi Mat Khau View Controller-->
         <scene sceneID="wPI-cy-S47">
             <objects>
-                <viewController id="wQl-4M-4d3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DoiMatKhauViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wQl-4M-4d3" customClass="DoiMatKhauViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s6q-zn-pVq"/>
                         <viewControllerLayoutGuide type="bottom" id="ht7-0F-gqC"/>
@@ -1250,54 +1278,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THAY ĐỔI MẬT KHẨU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoB-e8-gTL">
-                                <rect key="frame" x="76.5" y="40" width="222" height="26.5"/>
+                                <rect key="frame" x="77" y="40" width="222" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu mới: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yub-rL-4UM">
-                                <rect key="frame" x="35" y="315.5" width="305" height="33.5"/>
+                                <rect key="frame" x="35" y="316" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác nhận mật khẩu mới: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQI-Ss-9qg">
-                                <rect key="frame" x="35" y="384.5" width="305" height="33.5"/>
+                                <rect key="frame" x="35" y="385" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu hiện tại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Din-5M-A7l">
-                                <rect key="frame" x="35" y="283" width="305" height="30"/>
+                                <rect key="frame" x="35" y="284" width="305" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu mới" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-4y-FcD">
-                                <rect key="frame" x="35" y="350" width="305" height="30"/>
+                                <rect key="frame" x="35" y="351" width="305" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Xác nhận mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EmB-kQ-q0b">
-                                <rect key="frame" x="35" y="419" width="305" height="30"/>
+                                <rect key="frame" x="35" y="420" width="305" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONf-t3-YFp">
-                                <rect key="frame" x="35" y="469.5" width="305" height="37"/>
+                                <rect key="frame" x="35" y="470" width="305" height="37"/>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <state key="normal" title="Lưu">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnLuu:" destination="wQl-4M-4d3" eventType="touchUpInside" id="IhZ-5B-Nf8"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heo" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-iR-MU4">
-                                <rect key="frame" x="62" y="76.5" width="250" height="167"/>
+                                <rect key="frame" x="62" y="77" width="250" height="167"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu hiện tại: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIE-ti-fob">
-                                <rect key="frame" x="35" y="248.5" width="305" height="33.5"/>
+                                <rect key="frame" x="35" y="249" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1341,6 +1372,11 @@
                             <constraint firstItem="AQI-Ss-9qg" firstAttribute="top" secondItem="zQP-4y-FcD" secondAttribute="bottom" constant="4" id="xZd-lu-qnv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mkhientai" destination="Din-5M-A7l" id="tJW-Lr-yow"/>
+                        <outlet property="mkmoi" destination="zQP-4y-FcD" id="TVB-2V-j9B"/>
+                        <outlet property="xacnhan" destination="EmB-kQ-q0b" id="ySH-Ep-FEd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Djl-Sz-hSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1367,14 +1403,14 @@
     </scenes>
     <resources>
         <image name="add" width="512" height="512"/>
-        <image name="checked" width="32" height="32"/>
+        <image name="add1" width="48" height="48"/>
+        <image name="check1" width="48" height="48"/>
         <image name="default" width="1717" height="1717"/>
         <image name="edit" width="128" height="128"/>
         <image name="heo" width="180" height="180"/>
         <image name="insertmoney" width="900" height="600"/>
-        <image name="listthuchi" width="512" height="512"/>
-        <image name="money" width="150" height="120"/>
-        <image name="user" width="512" height="512"/>
+        <image name="list1" width="48" height="48"/>
+        <image name="user_2" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kkg-Dg-slR"/>
