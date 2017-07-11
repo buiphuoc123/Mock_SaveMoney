@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class LoginViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.hidesBackButton = true
         
         // Do any additional setup after loading the view.
     }
@@ -56,8 +58,26 @@ class LoginViewController: UIViewController {
             {
                 User.uid = user?.uid
                 User.email = user?.email
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "InsertViewController") as! InsertViewController
-                self.navigationController?.pushViewController(vc, animated: true)
+                //User.sotien = user?.sotien
+                 let ref = Database.database().reference()
+                ref.child("User").child(User.uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    if snapshot.exists() {
+                        if let snapshot = snapshot.value as? [String: AnyObject] {
+                            if let soTien = snapshot["sotien"] as? Int {
+                                if soTien != -1 {
+                                    User.sotien = soTien
+                                    
+                                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "QuanlyUserViewController") as! QuanlyUserViewController
+                                    self.navigationController?.pushViewController(vc, animated: true)
+                                } else {
+                                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "InsertViewController") as! InsertViewController
+                                    self.navigationController?.pushViewController(vc, animated: true)
+                                }
+                            }
+                        }
+                    } 
+                })
+                
             }
         }
         

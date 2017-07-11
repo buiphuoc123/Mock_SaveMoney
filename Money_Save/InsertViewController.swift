@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class InsertViewController: UIViewController {
 
@@ -36,9 +37,13 @@ class InsertViewController: UIViewController {
             return
         }
         else{
+            User.sotien = Int(lblSoTien.text!)!
+            
+            let ref = Database.database().reference()
+            ref.child("User").child(User.uid!).updateChildValues(["sotien": User.sotien!])
             
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-            vc.myMoney = lblSoTien.text!
+          //  vc.myMoney = lblSoTien.text!
             self.navigationController?.pushViewController(vc, animated: true)
             
         }

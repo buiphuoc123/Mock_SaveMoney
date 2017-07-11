@@ -9,6 +9,8 @@
 //import Cocoa
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
+    
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var usernameText: UITextField!
@@ -52,15 +54,23 @@ class RegisterViewController: UIViewController {
                 
             }
             else{
-            Auth.auth().createUser(withEmail: user!, password: pass!, completion: { (user, error) in
+            Auth.auth().createUser(withEmail: user!, password: pass!, completion: { (user1, error) in
                 if error != nil
                 {
-                    self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Ten dang nhap co dang laf email!! Vui long kiem tra lai")
+                    self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Ten dang nhap co dang la email!! Vui long kiem tra lai")
                                    }
                 else
                 {
+                    let ref = Database.database().reference()
+                    ref.child("User").child(user1!.uid).setValue(["sotien": -1], withCompletionBlock: { (error, ref) in
+                        if error == nil {
+                            self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Chúc mừng bạn đã đăng kí thành công!!!")
+                        } else {
+                            print(error?.localizedDescription)
+                        }
+                    })
                     // Thong bao dang ki thanh cong
-                    self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Chúc mừng bạn đã đăng kí thành công!!!")
+                    
                 }
             })
             }
@@ -72,7 +82,7 @@ class RegisterViewController: UIViewController {
         defaults.set("user", forKey: user!)
         defaults.set("pass", forKey: pass!)
         defaults.synchronize()*/
-        
+        	
         
         
     }

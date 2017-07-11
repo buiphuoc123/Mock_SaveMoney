@@ -44,7 +44,21 @@ class GetData {
             
             ] as [String : Any]
         
+        
+        // Cập nhật lại số tiền sau khi thực hiện giao dịch
         ref?.child("User").child(user!).child("giao_dich").childByAutoId().setValue(data, withCompletionBlock: { (error, ref) in
+            if error == nil {
+                if transactionModel.title == "Mục chi" {
+                    User.sotien = User.sotien! - Int(transactionModel.sotien)!
+                } else {
+                    User.sotien = User.sotien! + Int(transactionModel.sotien)!
+                }
+    
+                
+                self.ref?.child("User").child(user!).updateChildValues(["sotien": User.sotien!])
+            }
+            
+            
             completionHandler(error)
         })
     }

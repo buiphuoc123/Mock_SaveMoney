@@ -13,7 +13,7 @@
         <!--Quản lý chi tiêu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Money_Save" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -228,8 +228,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="đ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80r-qe-qh0">
-                                <rect key="frame" x="321" y="67" width="27" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="đ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80r-qe-qh0">
+                                <rect key="frame" x="321" y="27" width="27" height="35"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -356,6 +356,7 @@
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pRB-H1-BhW" firstAttribute="top" secondItem="KNf-AA-c2H" secondAttribute="bottom" constant="8" id="2Y0-Vj-oeq"/>
+                            <constraint firstItem="80r-qe-qh0" firstAttribute="top" secondItem="cOm-Va-RUY" secondAttribute="bottom" constant="7" id="2bd-8p-Wnf"/>
                             <constraint firstItem="BI2-gi-7U0" firstAttribute="width" secondItem="mIB-15-Ytd" secondAttribute="width" multiplier="1/15" id="4BO-Ly-los"/>
                             <constraint firstItem="BI2-gi-7U0" firstAttribute="top" secondItem="Qco-e9-EUP" secondAttribute="bottom" constant="10" id="4d5-Fn-whq"/>
                             <constraint firstItem="wGv-Jh-NcE" firstAttribute="centerX" secondItem="mIB-15-Ytd" secondAttribute="centerX" id="6ix-di-v2q"/>
@@ -539,7 +540,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e9H-aJ-l6z" id="IEt-Lj-OhU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-QA-14F">
@@ -868,7 +869,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ĐÃ GHI" id="ZNS-Kx-bFd">
-                        <barButtonItem key="rightBarButtonItem" image="add1" id="2R9-Tl-PAR"/>
+                        <barButtonItem key="rightBarButtonItem" image="add1" id="2R9-Tl-PAR">
+                            <connections>
+                                <action selector="btnThem:" destination="GwQ-3M-sTb" id="kgz-rd-WjJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="myTable" destination="s8a-rj-AjW" id="Zex-G1-2Cn"/>
@@ -1085,14 +1090,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tên tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k95-ux-98h">
-                                <rect key="frame" x="51" y="82" width="273" height="52"/>
+                                <rect key="frame" x="51" y="179" width="273" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TQ-Mh-D9r">
-                                <rect key="frame" x="0.0" y="214" width="150" height="38"/>
+                                <rect key="frame" x="16" y="272" width="150" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Đổi mật khẩu"/>
                                 <connections>
@@ -1100,7 +1105,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlF-iG-PIv">
-                                <rect key="frame" x="16" y="275" width="150" height="38"/>
+                                <rect key="frame" x="27" y="361" width="150" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Lịch sử thu chi"/>
                                 <connections>
@@ -1108,14 +1113,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Xin chào người dùng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ6-5S-He9">
-                                <rect key="frame" x="86" y="34" width="273" height="52"/>
+                                <rect key="frame" x="51" y="109" width="273" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mật khẩu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgv-mI-r9u">
-                                <rect key="frame" x="44" y="142" width="273" height="52"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Số tiền còn lại trong ví" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXm-02-l5W">
+                                <rect key="frame" x="64" y="444" width="201" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1125,16 +1130,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Quản lý tài khoản" id="Nre-Oc-zii">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="FVT-TQ-zDK"/>
+                        <barButtonItem key="rightBarButtonItem" image="logout" id="FVT-TQ-zDK">
+                            <connections>
+                                <action selector="btnLogout:" destination="Lp2-4w-2ka" id="iZf-SA-FHU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="matkhau" destination="Sgv-mI-r9u" id="99Y-ik-bGZ"/>
+                        <outlet property="lblsotienconlai" destination="sXm-02-l5W" id="Ghd-ve-rta"/>
                         <outlet property="tentaikhoan" destination="k95-ux-98h" id="bvQ-Xe-fBi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8H-Pe-MrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810" y="2119"/>
+            <point key="canvasLocation" x="2808.8000000000002" y="2117.9910044977514"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="izm-SO-S04">
@@ -1410,6 +1419,7 @@
         <image name="heo" width="180" height="180"/>
         <image name="insertmoney" width="900" height="600"/>
         <image name="list1" width="48" height="48"/>
+        <image name="logout" width="48" height="48"/>
         <image name="user_2" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>

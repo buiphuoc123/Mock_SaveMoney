@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class HomeViewController: UIViewController, SetValuePreviousVC {
    
     @IBOutlet weak var lblMyMoney: UILabel!
@@ -26,7 +26,7 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
     @IBOutlet weak var nameImage: UIImageView!
     @IBOutlet weak var tenHangMuctxt: UITextField!
     
-    var myMoney = String()
+    //var myMoney = String()
     var nameHangMuc = String()
     var dienGiai = String()
     var day = String()
@@ -37,7 +37,8 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblMyMoney.text = myMoney
+        lblTenMuc.text = "Mục chi"
+        lblMyMoney.text = "\(User.sotien ?? 0)"
         //lblNgay.text = "Hôm nay"
         let day = Date()
         let dateFormatter = DateFormatter()
@@ -70,6 +71,8 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
     
     @IBAction func clickHangMuc(_ sender: Any) {
         if flag == 1 {
+            self.soTientxt.text = ""
+            self.tenHangMuctxt.text = ""
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HangMucChiViewController") as! HangMucChiViewController
             
             vc.myDelegate = self
@@ -77,6 +80,8 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
             self.navigationController?.pushViewController(vc, animated: true)
         }
         if flag == 2 {
+            self.soTientxt.text = ""
+            self.tenHangMuctxt.text = ""
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "hangmucthu") as! HangMucThuViewController
             vc.myDelegate = self
             
@@ -103,22 +108,34 @@ class HomeViewController: UIViewController, SetValuePreviousVC {
         let thuchi = ThuChi(titled: lblTenMuc.text!, namemuc: tenHangMuctxt.text!, ngay: lblNgay.text!, sotien: soTientxt.text!)
         moneyinput = Int(soTientxt.text!)!
         moneynew = Int(lblMyMoney.text!)!
-        if(moneynew > moneyinput){
-            
-            moneynew = moneynew - moneyinput
-            lblMyMoney.text = String(moneynew)
-        
-            GetData.AddData(transactionModel: thuchi, completionHandler: { (error) in
-                if error == nil {
-                   self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Da ghi thanh cong")
-                } else {
-                    self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Ghi that bai")
-                }
-            })
+        if flag == 1{
+            if(moneynew > moneyinput){
+                
+                moneynew = moneynew - moneyinput
+                lblMyMoney.text = String(moneynew)
+                
+                GetData.AddData(transactionModel: thuchi, completionHandler: { (error) in
+                    if error == nil {
+                        self.soTientxt.text = ""
+                        self.tenHangMuctxt.text = ""
+                        
+                        self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Da ghi thanh cong")
+                    } else {
+                        self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Ghi that bai")
+                    }
+                })
+                
+            }
+            else{
+                self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Số tiền trong ví nhỏ hơn số tiền bạn nhập vào. Vui lòng kiểm tra lại")
+            }
             
         }
-        else{
-            self.showSuccessAlert(titleAlert: "Thông báo", messageAlert: "Số tiền trong ví nhỏ hơn số tiền bạn nhập vào. Vui lòng kiểm tra lại")
+        else {
+            moneynew = moneynew - moneyinput
+            lblMyMoney.text = String(moneynew)
+            self.soTientxt.text = ""
+            self.tenHangMuctxt.text = ""
         }
         
     }

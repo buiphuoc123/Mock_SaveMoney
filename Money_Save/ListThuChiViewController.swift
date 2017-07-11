@@ -46,6 +46,12 @@ class ListThuChiViewController: UIViewController, UITableViewDataSource {
         self.present(vc!, animated: true, completion: nil)
     }
     
+    @IBAction func btnThem(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+       
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

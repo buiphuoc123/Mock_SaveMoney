@@ -7,17 +7,19 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class QuanlyUserViewController: UIViewController {
 
     
     @IBOutlet weak var tentaikhoan: UILabel!
     
+    @IBOutlet weak var lblsotienconlai: UILabel!
     @IBOutlet weak var matkhau: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tentaikhoan.text = User.email
+        lblsotienconlai.text = "\(User.sotien ?? 0)"
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +37,23 @@ class QuanlyUserViewController: UIViewController {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListThuChiViewController") as! ListThuChiViewController
         
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    // logout
+    
+    @IBAction func btnLogout(_ sender: Any) {
+        
+        do {
+            try Auth.auth().signOut()
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+        
     }
     /*
     // MARK: - Navigation
